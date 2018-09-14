@@ -12,7 +12,7 @@ function my_theme_enqueue_styles() {
  */
 include_once( get_stylesheet_directory_uri() . '/inc/updater.php' );
 
-$updater = new HMS_Blocks_Updater( __FILE__ );
+$updater = new HMS_Maverick_Updater( __FILE__ );
 $updater->set_username( 'michealengland' );
 $updater->set_repository( 'hms-maverick' );
 // $updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
