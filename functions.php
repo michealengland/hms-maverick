@@ -6,6 +6,22 @@ function my_theme_enqueue_styles() {
   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 
+
+/**
+ * Check For Update Functionality
+ */
+include_once( get_stylesheet_directory_uri() . '/inc/updater.php' );
+
+$updater = new HMS_Blocks_Updater( __FILE__ );
+$updater->set_username( 'michealengland' );
+$updater->set_repository( 'hms-maverick' );
+// $updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
+
+$updater->initialize();
+
+require dirname( __FILE__ ) . '/options.php';
+
+
 /**
  * Enqueue Files
  */
@@ -39,9 +55,6 @@ if( ! empty( $located ) ) {
   get_template_part( '/inc/site', 'functions' );
 }
 
-
-
-
 /**
  * Filter Defualt Excerpt Length
  *
@@ -65,7 +78,6 @@ function wpdocs_custom_excerpt_length( $length ) {
    }
  }
 
-
 /**
 * Remove "Category:" from category titles.
 */
@@ -76,18 +88,3 @@ function prefix_category_title( $title ) {
   return $title;
 }
 add_filter( 'get_the_archive_title', 'prefix_category_title' );
-
-
-
-
-
-include_once( get_stylesheet_directory_uri() . '/inc/updater.php' );
-
-$updater = new HMS_Blocks_Updater( __FILE__ );
-$updater->set_username( 'michealengland' );
-$updater->set_repository( 'hms-blocks' );
-// $updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
-
-$updater->initialize();
-
-require dirname( __FILE__ ) . '/options.php';
