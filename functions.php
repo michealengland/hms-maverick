@@ -25,6 +25,7 @@ if( ! empty( $located ) ) {
  * Check For Update Functionality
  */
 // Functions specific to this site.
+/*
 $located = locate_template( '/inc/theme-updater.php' );
 
 if( ! empty( $located ) ) {
@@ -37,6 +38,7 @@ if( ! empty( $located ) ) {
   // $updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
   $updater->initialize();
 }
+*/
 
 
 // Theme Settings
