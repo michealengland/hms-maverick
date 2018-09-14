@@ -7,29 +7,37 @@ function my_theme_enqueue_styles() {
 }
 
 
-/**
- * Check For Update Functionality
- */
-include_once( get_stylesheet_directory_uri() . '/inc/updater.php' );
 
-$updater = new HMS_Maverick_Updater( __FILE__ );
-$updater->set_username( 'michealengland' );
-$updater->set_repository( 'hms-maverick' );
-// $updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
-
-$updater->initialize();
-
-require dirname( __FILE__ ) . '/options.php';
 
 
 /**
  * Enqueue Files
  */
+
 // Functions specific to this site.
 $located = locate_template( '/inc/theme-customizer.php' );
 if( ! empty( $located ) ) {
   get_template_part( '/inc/theme', 'customizer' );
 }
+
+
+/**
+ * Check For Update Functionality
+ */
+// Functions specific to this site.
+$located = locate_template( '/inc/theme-updater.php' );
+
+if( ! empty( $located ) ) {
+
+  get_template_part( '/inc/theme-updater' );
+  
+  $updater = new HMS_Maverick_Updater( __FILE__ );
+  $updater->set_username( 'michealengland' );
+  $updater->set_repository( 'hms-maverick' );
+  // $updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
+  $updater->initialize();
+}
+
 
 // Theme Settings
 $located = locate_template( '/inc/theme-settings.php' );
