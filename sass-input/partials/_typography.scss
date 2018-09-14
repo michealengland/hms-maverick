@@ -1,0 +1,106 @@
+body {
+font-family: $font-family-1; // Default Font for Site
+color: $dark-gray-1; // Default Font Color for Site
+}
+
+h1, h2, h3, h4, h5, h6 {
+color: inherit; // FIX IE Coloring
+margin: 0;
+padding: 0 0 $mod-gap-0 0;
+}
+
+p {
+padding-bottom: $mod-gap-0;
+margin: 0;
+}
+
+.has-large-font-size {
+padding-bottom: 0;
+font-weight: $bold;
+}
+
+ul, ol {
+margin: 0 0 0 1.3em; // Offset list for bullet styles
+text-align: left;
+}
+
+
+
+
+
+@media screen and (min-width: 1em) {
+  body {
+  font-size: 14px;
+  }
+
+  h1 {
+  color: inherit;
+  font-size: 2.6em;
+  }
+
+  h2 {
+  font-size: 2.2em;
+  }
+
+  h3 {
+  font-size: 1.8em;
+  }
+
+  h4 {
+  font-size: 1.4em;
+  font-weight: $regular;
+  }
+
+  h5 {
+  font-size: 1.2em;
+  letter-spacing: unset;
+  text-transform: none;
+  font-weight: $regular;
+  }
+
+  h6 {
+  font-size: 1.2em;
+  font-weight: $light;
+  }
+
+  p {
+  font-size: 1em;
+  line-height: 2em;
+  }
+
+  ul, ol {
+
+    li {
+    line-height: 1.6em;
+    padding-bottom: $mod-gap-0;
+    }
+  }
+}
+
+
+@media screen and (min-width: 48em) {
+  body {
+  font-size: 16px;
+  }
+
+  p {
+  font-size: 1em;
+  margin-bottom: $mod-gap-1;
+  }
+
+  .has-large-font-size {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+}
+
+
+@media screen and (min-width: 60em) {
+
+  body {
+  font-size: 18px;
+  }
+
+}

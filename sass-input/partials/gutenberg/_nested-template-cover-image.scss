@@ -1,0 +1,163 @@
+.wp-block-hmsblocks-nested-cover-img {
+color: $white;
+position: relative;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 430px;
+height: 1px; // FIXES IE MIN HEIGHT BUG
+width: 100%;
+margin: 0 auto;
+display: flex;
+padding: $mod-gap-1;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 3;
+
+
+  h1, h2, h3, h4, h5, h6 p {
+  margin-bottom: 0;
+  padding: 0;
+  color: inherit;
+  }
+
+
+  $black: #000;
+
+  &.has-background-dim::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba( $black, 0.5 );
+  }
+
+  @for $i from 1 through 10 {
+
+
+
+    &.has-navy-overlay-color.has-background-dim-#{ $i * 10 }{
+    color: $white;
+
+      &::before {
+      background-color: rgba( $color-1, $i * 0.1  );
+    }}
+
+    &.has-orange-overlay-color.has-background-dim-#{ $i * 10 } {
+    color: $white;
+
+      &::before {
+      background-color: rgba( $color-2, $i * 0.1  );
+    }
+  }
+
+    &.has-light-blue-overlay-color.has-background-dim-#{ $i * 10 } {
+    color: $white;
+
+      &::before {
+      background-color: rgba( $color-3, $i * 0.1  );
+      }
+    }
+
+
+
+    &.has-moss-green-overlay-color.has-background-dim-#{ $i * 10 }{
+    color: $white;
+
+      &::before {
+      background-color: rgba( $color-4, $i * 0.1  );
+    }
+  }
+
+    &.has-warm-gray-1-overlay-color.has-background-dim-#{ $i * 10 }::before {
+      background-color: rgba( $color-5, $i * 0.1  );
+    }
+
+    &.has-warm-gray-2-overlay-color.has-background-dim-#{ $i * 10 }::before {
+      background-color: rgba( $color-6, $i * 0.1  );
+    }
+
+    &.has-white-overlay-color.has-background-dim-#{ $i * 10 } {
+    color: $color-1;
+
+      &::before {
+      background-color: rgba( $white, $i * 0.1  );
+      }
+    }
+
+    &.has-dark-gray-overlay-color.has-background-dim-#{ $i * 10 }::before {
+      background-color: rgba( $white, $i * 0.1  );
+    }
+
+  }
+
+
+
+
+
+  .layout-inner-content {
+  flex: 0 1 auto;
+  z-index: 1;
+  //width: 100%;
+  p {
+  width: 100%;
+  }
+
+    &:last-child {
+    margin-bottom: 0;
+    }
+  }
+
+
+  // If Parallax is enabled
+  &.has-parallax {
+  background-attachment: fixed;
+  }
+
+}
+
+
+@media screen and (min-width: 1em) {
+    .wp-block-hmsblocks-nested-cover-img {
+      margin-bottom: $mod-gap-1;
+
+      .layout-inner-content {
+      //padding: $obj-padding-1;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+      font-size: $overlay-title-1;
+      padding-bottom: .5em;
+      }
+    }
+}
+
+
+@media screen and (min-width: 48em) {
+  .wp-block-hmsblocks-nested-cover-img {
+
+    .layout-inner-content {
+    //padding: $obj-padding-2;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+    font-size: $overlay-title-2;
+    }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .wp-block-hmsblocks-nested-cover-img {
+
+    .layout-inner-content {
+    //padding: $obj-padding-3;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+    font-size: $overlay-title-3;
+    }
+  }
+}

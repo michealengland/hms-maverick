@@ -1,0 +1,109 @@
+@media screen and (min-width: 1em) {
+
+  .page .panel-content .entry-title,
+  .page-title,
+  body.page:not(.twentyseventeen-front-page) .entry-title
+  {
+  font-weight: $thick;
+  font-size: 1.4em;
+  }
+
+
+  .page-header {
+  position: relative;
+  max-width: $mw-1;
+  padding: $mod-gap-1 $global-spacing;
+
+    // Featued image has been set
+    &.has-featured {
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $white;
+    display: flex;
+    margin-bottom: $mod-gap-2;
+    min-height: 400px;
+    max-width: inherit;
+
+      // bg overlay
+      &::after {
+      background-color: rgba($black, .65);
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      }
+
+      .inner-wrap {
+      max-width: 100%;
+      z-index: 1;
+
+        .entry-meta {
+        color: $white;
+        font-weight: 400;
+        letter-spacing: 1px;
+        }
+
+        .entry-title {
+        //font-size: 4em;
+        }
+
+        a {
+        color: $white;
+        }
+      }
+
+
+      #breadcrumbs {
+      color: inherit;
+
+        a {
+        color: inherit;
+        }
+      }
+    } // .has-featured
+
+    .inner-wrap {
+    position: relative;
+    }
+
+    // clear default spacing
+    .entry-title,
+    .page-title
+    {
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    }
+
+  } // .page-header
+}
+
+
+@media screen and (min-width: 48em) {
+  .page-header {
+  padding: $mod-gap-1 $global-spacing-1;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+  .page-header {
+  padding: $mod-gap-1 $global-spacing-2;
+  }
+
+  .page-header.has-featured .inner-wrap .entry-title {
+  font-size: 4em;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .page-header {
+  padding: $mod-gap-1 $global-spacing-3;
+  }
+}

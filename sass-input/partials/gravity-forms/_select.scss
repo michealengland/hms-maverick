@@ -1,0 +1,31 @@
+.ginput_container_select {
+  margin-bottom: .5em;
+}
+
+
+// Height for Multi Select
+.ginput_container_multiselect select {
+  height: 4em;
+}
+
+
+select option {
+//  background-color: $wire-color-1;
+
+  &:hover {
+  color: #fff;
+  background-color: $color-2;
+  }
+
+  &:focus {
+  color: #fff;
+  background-color: $color-2;
+  }
+}
+
+
+select[multiple] option:checked,
+select[multiple]:focus option:checked {
+  // IMPORTANT TO OVERRIDE DEFAULT CHECKED BG COLOR
+  background: $color-2 linear-gradient(0deg, $color-2 0%, $color-2 100%);
+}

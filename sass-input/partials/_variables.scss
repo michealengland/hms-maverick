@@ -1,0 +1,129 @@
+/**
+* @NOTE Roboto 300,400,400i,700,700i
+*/
+// Fonts Variables
+
+$light: 300;
+$regular: 400;
+$italic: italic;
+$thick: 600;
+$bold: 800;
+
+
+// Color Variables
+
+// WIRE FRAME COLORS from lightest to darkest
+
+$white: #ffffff;
+
+
+$font-family-1: Arial, Helvetica, sans-serif;
+
+$color-1: #00263e; // Navy
+$color-2: #d15e14; // Orange
+$color-3: #73c3d5; // Light Blue
+$color-4: #decc62; // Moss Green
+$color-5: #8c837b; // Grayish Brown
+$color-6: #b4aca4; // Warm Gray
+//$color-7: $dark-gray-1;
+$black: #000;
+$dark-gray-1: #222; // Dark Gray
+$light-gray-1: #f5f5f5; // Ligh Gray
+
+
+$default-opacity: .5;
+
+$linear-gradient-1: linear-gradient(180deg, rgba($black, 0) 40%, rgba( $black, 0.6) 100%);
+$linear-gradient-1-hover: linear-gradient(180deg, rgba( $black, .4) 0, rgba($black, 0.9) 100%);
+
+$linear-gradient-panel-img: linear-gradient(180deg, rgba(0, 0, 0, .3) 20%, rgba(0, 0, 0, 0.9) 100%);
+
+$overlay-1: rgba($color-1, $default-opacity);
+$overlay-2: rgba($color-2, $default-opacity);
+$overlay-3: rgba($color-3, $default-opacity);
+$overlay-4: rgba($color-4, $default-opacity);
+$overlay-5: rgba($color-5, $default-opacity);
+$overlay-6: rgba($color-6, $default-opacity);
+
+
+
+// Core Site Coloring
+$site_bg: $white;
+$site_header_bg: $color-1;
+
+// Footer
+$site_footer_bg: $color-1; // Outer Container
+$site_widget_area_bg: $color-1; // widget_area
+$site_footer_credits_bg: $color-1; // Footer Credits @footer-info.php
+
+// link Color Settings
+$light-link: $white;
+$light-link-hover: $color-2;
+$light-link-focus: $color-2;
+$light-link-active: $color-3;
+
+// link Color Settings
+$dark-link: $color-1;
+$dark-link-hover: $color-2;
+$dark-link-focus: $color-2;
+$dark-link-active: $color-3;
+
+
+// Main Nav Link Colors
+$main-nav-link: $light-link;
+$main-nav-link-hover: $light-link-hover;
+$main-nav-link-focus: $light-link-focus;
+$main-nav-link-active: $light-link-active;
+// Sub Navigation Links
+$sub-nav-bg: $white;
+$sub-nav-link-bg: $color-3;
+$sub-nav-link: $dark-link;
+$sub-nav-link-hover: $dark-link-hover;
+$sub-nav-link-focus: $dark-link-focus;
+$sub-nav-link-active: $dark-link-active;
+
+// Widths
+
+$mw-desktop: 1280px;
+
+// Max Widths
+$mw-2: 800px;
+$mw-1: 1440px;
+$mw-0: 800px;
+
+// Max Widths
+$mw-2: 100%;
+$mw-1: 100%;
+$mw-0: 100%;
+
+
+$mod-gap-0: .5em;
+$mod-gap-1: 1em;
+$mod-gap-2: 2em;
+$mod-gap-3: 3em;
+
+$global-spacing: .5rem;
+$global-spacing-1: 1.5rem;
+$global-spacing-2: 3rem;
+$global-spacing-3: 8rem;
+
+$obj-padding-1: 0 .5em;
+$obj-padding-2: 0 .5em;
+$obj-padding-3: 0 .5em;
+
+$obj-padding-vert-1: 1em 0;
+$obj-padding-vert-2: 2em 0;
+$obj-padding-vert-3: 3em 0;
+
+$mod-padding-1: 3em 1em;
+$mod-padding-2: 3em 2em;
+$mod-padding-3: 3em 3em;
+
+$mod-title-1: 1.8em;
+$mod-title-2: 3em;
+$mod-title-3: 3.4em;
+
+
+$overlay-title-1: 1.8em;
+$overlay-title-2: 3em;
+$overlay-title-3: 3.4em;

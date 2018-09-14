@@ -1,0 +1,14 @@
+.ginput_container_name {
+  display: flex;
+  justify-content: space-between;
+
+  .name_first {
+    flex: 1 0 50%;
+    padding-right: .2em;
+  }
+
+  .name_last {
+    flex: 1 0 50%;
+    padding-left: .2em;
+  }
+}

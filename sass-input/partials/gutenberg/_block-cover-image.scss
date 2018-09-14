@@ -1,0 +1,180 @@
+@media screen and (min-width: 1em) {
+
+  .wp-block-cover-image {
+  align-items: center;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 1px; // Fixes vertical centering in IE11
+  height: 100%;
+  max-height: 100%;
+  justify-content: center !important;
+  margin-bottom: $mod-gap-1;
+  padding: $mod-gap-1;
+  width: auto;
+
+    // Puts all child elements on top
+    * {
+    z-index: 2;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+    font-weight: $thick;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: inherit;
+    }
+
+    // Override default Gutenberg block styles heading
+    h2 {
+    padding: 0;
+    color: inherit;
+    text-align: inherit; // override default block alignment
+    }
+
+    &.has-right-content h2,
+    &.has-left-content h2,
+    &.has-center-content h2
+    {
+    text-align: inherit;
+    }
+
+    p {
+    line-height: 1.6em;
+    font-weight: $thick;
+    width: 100%;
+    }
+
+    a {
+    box-shadow: 0 1px 0 0 $white;
+    color: $white;
+      &:hover, &:focus {
+      box-shadow: 0 3px 0 0 $white;
+      color: $white;
+      }
+    }
+
+    // Default Cover Image
+    .wp-block-cover-image-text {
+    font-weight: $thick;
+    font-size: 2em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    }
+
+    // Set background color dimness based on block range control
+    @for $i from 1 through 10 {
+
+      &.has-color-1-overlay-color.has-background-dim-#{ $i * 10 }{
+        &::before {
+        background-color: rgba( darken( $color-1, 5%), $i * 0.1  );
+        }
+      }
+
+      &.has-color-2-overlay-color.has-background-dim-#{ $i * 10 } {
+        &::before {
+        background-color: rgba( darken( $color-2, 5%), $i * 0.1  );
+        }
+      }
+
+      &.has-color-3-overlay-color.has-background-dim-#{ $i * 10 } {
+        &::before {
+        background-color: rgba( darken( $color-3, 40%), $i * 0.1  );
+        }
+      }
+
+      &.has-color-4-overlay-color.has-background-dim-#{ $i * 10 } {
+        &::before {
+        background-color: rgba( darken( $color-4, 50%), $i * 0.1  );
+        }
+      }
+
+      &.has-color-5-overlay-color.has-background-dim-#{ $i * 10 }::before {
+        background-color: rgba( darken( $color-5, 25%), $i * 0.1  );
+      }
+
+      &.has-color-6-overlay-color.has-background-dim-#{ $i * 10 }::before {
+        background-color: rgba( darken( $color-6, 35%), $i * 0.1  );
+      }
+
+      &.has-color-7-overlay-color.has-background-dim-#{ $i * 10 }::before {
+        background-color: rgba( $dark-gray-1, $i * 0.1  );
+      }
+
+      &.has-white-overlay-color.has-background-dim-#{ $i * 10 } {
+      color: $color-1;
+
+        &::before {
+        background-color: rgba( $white, $i * 0.1  );
+        }
+
+        a {
+        box-shadow: 0 1px 0 0 $color-1;
+        color: $color-1;
+
+          &:hover, &:focus {
+          box-shadow: 0 3px 0 0 $color-2;
+          color: $color-2;
+          }
+        }
+      }
+    }
+
+    // Fixes nested flex blocks in IE11
+    .wp-block-hms-innerblocks-cta {
+    max-width: 100%;
+    }
+
+    &.has-parallax {
+    background-attachment: scroll;
+    }
+
+  }
+
+
+}
+
+@media screen and (min-width: 48em) {
+  .wp-block-cover-image {
+  padding: $mod-gap-1;
+
+    .wp-block-cover-image-text {
+    font-size: 3em;
+    max-width: $mw-desktop;
+    padding: 0;
+    }
+
+
+    &.has-parallax {
+    background-attachment: fixed;
+    }
+
+  }
+
+  .wp-block-cover-image.alignfull {
+  padding: $mod-gap-1 $global-spacing-1;
+  }
+
+
+}
+
+@media screen and (min-width: 60em) {
+  .wp-block-cover-image {
+  padding: $mod-gap-2;
+    .wp-block-cover-image-text {
+    font-weight: $bold;
+    font-size: 3em;
+    }
+  }
+
+  .wp-block-cover-image.alignfull {
+  padding: $mod-gap-1 $global-spacing-2;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .wp-block-cover-image.alignfull {
+  padding: $mod-gap-1 $global-spacing-3;
+  }
+}

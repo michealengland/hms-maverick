@@ -1,0 +1,127 @@
+@media screen and (min-width: 1em) {
+  .wp-block-columns
+  {
+  display: flex;
+  display: block;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+
+    .wp-block-column {
+    margin-bottom: $mod-gap-2;
+
+      // Remove Padding from default paragraph block
+      > p {
+      margin-bottom: 0;
+      }
+
+      // Hero Cover Image nested-template-cta
+      .wp-block-hmsblocks-nested-cover-img {
+      height: 100%;
+      }
+
+
+    // Fix height issues
+    .wp-block-cover-image {
+    height: 100%;
+    }
+    }
+  }
+
+  .wp-block-hms-offset-columns.wp-block-columns {
+  margin-bottom: $mod-gap-1;
+
+    // Remove bottom margin from columns
+    .wp-block-column {
+    margin-bottom: 0;
+
+      // Remove all bottom margin from children
+      * {
+      margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 48em) {
+  .wp-block-columns {
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  max-width: $mw-1;
+  margin: 0 auto;
+
+
+    @for $i from 1 through 6 {
+
+      // make columns equal width
+      &.has-#{ $i }-columns {
+      grid-auto-columns: 1fr;
+      grid-gap: 0;
+      }
+
+      // Objects in Columns
+      &.has-2-columns .wp-block-column
+      {
+      -webkit-box-flex: 1;
+      $flex: 100% / 2;
+      flex: 0 1 $flex;
+      max-width: calc(50% - .5em); // Fixes IE Sizing
+      min-width: 200px;
+      width: 100%;
+      }
+
+      // Objects in Columns
+      &.has-3-columns .wp-block-column
+      {
+      -webkit-box-flex: 1;
+      $flex: 100% / 3;
+      flex: 0 1 $flex;
+      max-width: calc(33.33% - .5em); // Fixes IE Sizing
+      width: 100%;
+      }
+
+      // Objects in Columns
+      &.has-4-columns .wp-block-column
+      {
+      -webkit-box-flex: 1;
+      $flex: 100% / 4;
+      flex: 0 1 $flex;
+      max-width: calc(25% - .5em); // Fixes IE Sizing
+      width: 100%;
+      }
+
+      // Objects in Columns
+      &.has-5-columns  .wp-block-column
+      {
+      -webkit-box-flex: 1;
+      $flex: 100% / 5;
+      flex: 0 1 $flex;
+      max-width: calc(20% - .5em); // Fixes IE Sizing
+      width: 100%;
+      }
+
+      // Objects in Columns
+      &.has-6-columns  .wp-block-column
+      {
+      -webkit-box-flex: 1;
+      $flex: 100% / 6;
+      flex: 0 1 $flex;
+      max-width: calc(16.67% - .5em); // Fixes IE Sizing
+      width: 100%;
+      }
+    }
+  }
+
+
+
+
+}
+
+
+@media screen and (min-width: 60em) {
+
+}

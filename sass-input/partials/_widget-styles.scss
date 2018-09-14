@@ -1,0 +1,26 @@
+// Default Search Bar
+.search-form {
+position: relative;
+
+  // Button Container
+  .search-submit {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  width: 48px;
+
+    // SVG Icon
+    .icon {
+    height: 100%;
+    top: 0;
+    width: 100%;
+    padding: .2em;
+    display: block;
+    }
+  }
+}
+
+// Remove defualt borders on list items
+.widget ul li, .widget ol li {
+  border: none;
+}

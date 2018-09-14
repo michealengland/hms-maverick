@@ -1,0 +1,15 @@
+.wp-block-embed {
+  background-color: lighten($color-1, 5%);
+  margin: 0 0 1em 0;
+  text-align: center; // Centers Video
+  padding: $mod-gap-1;
+
+    embed, iframe, object {
+    box-shadow: 0 0 8px 0 rgba($black, .2 );
+    margin-bottom: 0;
+    }
+
+    figcaption {
+    color: $color-1;
+    }
+}

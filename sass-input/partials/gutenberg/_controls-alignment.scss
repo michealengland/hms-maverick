@@ -1,0 +1,91 @@
+@media screen and (min-width: 1em) {
+
+// Fixes issue on cover image caused by twentyseventeen display property.
+  .aligncenter, .alignwide, .alignfull, .alignleft, .alignright {
+  //display: flex;
+  }
+
+  .alignright {
+
+  }
+
+  .aligncenter {
+  max-width: $mw-0;
+  max-width: auto;
+  width: auto;
+  }
+
+  .alignleft {
+  max-width: auto;
+  width: auto;
+  }
+
+  .alignwide {
+  margin-left: $mod-gap-0;
+  margin-right: $mod-gap-0;
+  max-width: inherit;
+  }
+
+  .alignfull {
+  margin-left: -$mod-gap-0;
+  margin-right: -$mod-gap-0;
+  width: auto;
+  max-width: inherit;
+  }
+
+  .has-center-content  {
+  text-align: center;
+  align-items: center;
+  }
+
+  .has-right-content  {
+  text-align: right;
+  align-items: flex-end;
+  }
+
+  .has-left-content  {
+  text-align: left;
+  align-items: flex-start;
+  }
+
+
+}
+
+
+@media screen and (min-width: 48em) {
+  .alignwide {
+  margin-left: -$mod-gap-0;
+  margin-right: -$mod-gap-0;
+  }
+
+  .alignfull {
+  margin-left: -$global-spacing-1;
+  margin-right: -$global-spacing-1;
+  width: auto;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+  .alignwide {
+  margin-left: -$global-spacing-1;
+  margin-right: -$global-spacing-1;
+  }
+
+  .alignfull {
+  margin-left: -$global-spacing-2;
+  margin-right: -$global-spacing-2;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .alignwide {
+  margin-left: -$global-spacing-2;
+  margin-right: -$global-spacing-2;
+  }
+
+  .alignfull {
+  margin-left: -$global-spacing-3;
+  margin-right: -$global-spacing-3;
+  }
+}

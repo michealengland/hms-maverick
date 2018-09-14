@@ -1,0 +1,12 @@
+.wp-block-audio {
+
+  // Changing of Styles is not possible.
+  audio {
+  background-color: $color-3;
+  }
+
+
+    &.aligncenter {
+    text-align: center;
+    }
+}

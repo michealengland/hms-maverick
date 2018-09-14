@@ -1,0 +1,140 @@
+// NOTE: Typographic Blocks don't utilize a class by default. See partials/typography.scss
+@import "block-button"; // .wp-block-button
+@import "block-cover-image"; // .wp-block-cover-image
+@import "block-columns"; // .wp-block-columns
+@import "block-image"; // .wp-block-image
+@import "block-gallery-item"; // .wp-block-gallery
+@import "block-preformatted"; // .wp-block-preformatted
+@import "block-quote"; // .wp-block-quote
+@import "block-table"; // .wp-block-table
+
+@import "offset-columns"; // .wp-block-table
+
+
+// Custom Blocks
+@import "nested-template-cover-image"; // Nested Block Cover Image, Header, Paragraph
+@import "nested-template-cta"; // Nested Block Header, Content, Button
+@import "image-card-experimental"; // WIP
+@import "toggle-block"; // WIP
+
+@import "nested-template-basic"; // WIP
+
+
+// Hide Initial Animation for JS
+.wp-block-hmsblocks-template-card-basic.animatable {
+visibility: hidden;
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+}
+
+// Card Opacity & Transform
+.wp-block-hmsblocks-template-card-basic.animatable  {
+  animation-name: card-fade-in;
+  visibility: visible;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+
+.alignwide {
+max-width: $mw-1;
+margin-bottom: $mod-gap-1;
+width: auto;
+}
+
+.alignfull {
+max-width: 100%;
+}
+
+
+
+.wp-block-button.alignundefined.layout-inner-content,
+.wp-block-button.alignnone.layout-inner-content
+{
+  //text-align: center;
+}
+
+
+.has-navy-background-color {
+  background-color: $color-1;
+}
+
+.has-orange-background-color {
+  background-color: $color-2;
+}
+
+.has-light-blue-background-color {
+  background-color: $color-3;
+}
+
+.has-moss-green-background-color {
+  background-color: $color-4;
+}
+
+.has-warm-gray-1-background-color {
+  background-color: $color-5;
+}
+
+.has-warm-gray-2-background-color {
+  background-color: $color-6;
+}
+
+.has-white-background-color {
+  background-color: $white;
+}
+
+
+.has-navy-color {
+  color: $color-1;
+}
+
+.has-orange-color {
+  color: $color-2;
+}
+
+.has-light-blue-color {
+  color: $color-3;
+}
+
+.has-moss-green-color {
+  color: $color-4;
+}
+
+.has-warm-gray-1-color {
+  color: $color-5;
+}
+
+.has-warm-gray-2-color {
+  color: $color-6;
+}
+
+.has-white-color {
+  color: $white;
+}
+
+.has-dark-gray-color {
+  color: $dark-gray-1;
+}
+
+
+.alignleft,
+.aligncenter,
+.alignright {
+  display: inline-block;
+  float: none;
+}
+.alignleft {
+  text-align: left;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.aligncenter {
+  text-align: center;
+}

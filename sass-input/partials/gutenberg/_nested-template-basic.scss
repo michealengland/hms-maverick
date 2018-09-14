@@ -1,0 +1,61 @@
+.wp-block-hmsblocks-nested-basic {
+    //text-align: center;
+    padding: $mod-gap-1;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: unset;
+    }
+
+    // Navy Background
+    &.bg-1 {
+    background-color: $color-1;
+    color: $white;
+
+    }
+
+    // Light Blue
+    &.bg-2 {
+    background-color: $color-2;
+    color: $white;
+
+    }
+
+    // Orange
+    &.bg-3 {
+    background-color: $color-3;
+    color: $white;
+
+    }
+}
+
+
+
+@media screen and (min-width: 1em) {
+  .wp-block-hmsblocks-nested-basic {
+  padding: 5em 2em;
+
+    h1, h2, h3, h4, h5, h6 {
+    font-size: $mod-title-1;
+    }
+  }
+}
+
+
+@media screen and (min-width: 48em) {
+  .wp-block-hmsblocks-nested-basic {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em 2em;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+  .wp-block-hmsblocks-nested-basic {
+  padding: 5em 2em;
+  }
+}

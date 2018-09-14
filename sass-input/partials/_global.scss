@@ -1,0 +1,89 @@
+// Main Menu Wrapper
+.navigation-top .wrap {
+  max-width: 100%;
+  padding: .75em $mod-gap-1;
+}
+
+.site-content-contain {
+  background-color: $site_bg; // Site Background Color
+
+    // Inner Content Container
+    .site-content {
+    padding: 0;
+    }
+}
+
+.page:not(.home) #content {
+padding-bottom: 0;
+}
+
+// Inner Wrap for content area
+.site-content > .wrap {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+// Fixes Issue with spacing
+.entry-content.flex-tiles::before,
+.entry-content.flex-tiles::after {
+display: none;
+}
+
+
+// Single Column Layouts Without Sidebars
+.page-one-column .panel-content .wrap,
+.single-post:not(.has-sidebar) #primary,
+.archive.has-sidebar:not(.error404) #primary,
+.blog.has-sidebar:not(.error404) #primary,
+.page.page-one-column:not(.twentyseventeen-front-page) #primary,
+.post-type-archive-mls.has-sidebar:not(.error404) #primary,
+.post-type-archive-mls.has-sidebar:not(.error404) #primary,
+.mls-template-default.has-sidebar:not(.error404) #primary,
+.mls-template-default.has-sidebar:not(.error404) #primary,
+.archive.page-one-column:not(.has-sidebar) .page-header,
+.archive.page-one-column:not(.has-sidebar) #primary {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+// Footer Width
+.site-footer .wrap {
+//  max-width: 100%;
+//  padding: 0;
+}
+
+
+
+@media screen and (min-width: 1em) {
+  .entry-content {
+   padding: 0 $global-spacing;
+  }
+}
+
+
+@media screen and (min-width: 48em) {
+  .entry-content {
+   padding: 0 $global-spacing-1;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+  .entry-content {
+    padding: 0 $global-spacing-2;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .entry-content {
+    padding: 0 $global-spacing-3;
+  }
+}

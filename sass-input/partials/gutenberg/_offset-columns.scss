@@ -1,0 +1,36 @@
+@media screen and (min-width: 1em) {
+}
+
+@media screen and (min-width: 48em) {
+	.wp-block-hmsblocks-nested-columns-template {
+		display: flex;
+
+		&.has-reverse {
+		flex-direction: row-reverse;
+		}
+
+	  .wp-block-column {
+			flex: 1 0 auto;
+			width: 100%;
+
+			// Starts count at 1
+			&:nth-child( odd ){
+			max-width: calc(60% - .75em);
+			flex: 1 0 auto;
+			}
+
+	    &:nth-child( even ) {
+	    max-width: calc(40% - .75em);
+			flex: 1 0 auto;
+	    }
+	  }
+	}
+}
+
+
+@media screen and (min-width: 60em) {
+  .wp-block-columns,
+  .wp-block-hmsblocks-nested-columns-template {
+  padding: 0 $mod-gap-1;
+  }
+}

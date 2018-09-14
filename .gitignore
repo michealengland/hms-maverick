@@ -1,0 +1,8 @@
+/inc/site/site-functions.php
+/inc/site/site-modules.php
+style.map
+
+# You want to have .DS_Store and other environment files/packages in your .gitignore_global configuration.
+# @see https://knowthecode.io/labs/local-development-environment-setup-mac/install-configure-git
+.DS_Store
+.DS_Store?

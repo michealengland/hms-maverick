@@ -1,0 +1,54 @@
+// Button Styling
+button,
+input[type="button"],
+input[type="submit"] {
+background: $color-2;
+
+  &:hover {
+    background: $color-3;
+  }
+
+  &:focus {
+    background: $color-3;
+  }
+
+}
+
+// General Field Styling
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+color: $color-2;
+border-color: $color-2;
+padding: .2em;
+
+  &:focus {
+    color: $color-2;
+    border-color: $color-2;
+  }
+}
+
+// Select Field Generic Styling
+
+select {
+  height: auto;
+  padding: .2em;
+
+  &:focus {
+    color: $color-2;
+    border-color: $color-2;
+  }
+}

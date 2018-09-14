@@ -1,0 +1,98 @@
+// Form Wrapper
+.gform_wrapper {
+    background-color: $color-1;
+    margin: 1em 0;
+    padding: 1em;
+
+    .gform_heading {
+      margin-bottom: 1em;
+    }
+
+    // Remove Bullets from List Items
+    ul {
+      list-style: none;
+    }
+
+    // List of Fields
+    .gform_fields {
+
+      // Field lo
+      .gfield {
+      margin-bottom: 1em;
+
+        // Normal Labels
+        label {
+        font-weight: 400;
+        }
+
+        // Field Labels
+        .gfield_label {
+        font-weight: 600;
+        font-size: 1.2em;
+        }
+      }
+    }
+}
+
+// Gravity Forms Header
+.gform_heading {
+  // Form Title
+  .gform_title {
+    color: $color-1;
+    font-size: 1.8em;
+    margin-bottom: .5em;
+  }
+  // Form Description
+  .gform_description {
+
+  }
+}
+
+// Gravity Forms Footer
+.gform_footer {
+
+}
+
+// Disable Spacing on certain blocks.
+.wp-block-hms-innerblocks,
+.wp-block-hms-cover-img
+{
+  .gform_wrapper {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+    form {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    }
+  }
+}
+
+.wp-block-hms-cover-img
+{
+  .gform_wrapper {
+
+
+    form {
+
+      .gform_heading .gform_title {
+      color: $white;
+      }
+
+      label {
+      color: $white;
+      }
+
+    }
+  }
+}
+
+
+
+// Fix issues with name field
+html div.ginput_complex.ginput_container.gf_name_has_2 span:first-child,
+.gform_wrapper .ginput_complex.ginput_container.ginput_container_email .ginput_left {
+padding-right: 1em;
+}

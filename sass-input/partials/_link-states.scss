@@ -1,0 +1,242 @@
+// General Link Styling
+.entry-content a,
+.entry-summary a,
+.comment-content a,
+.widget a,
+.site-footer
+.widget-area a,
+.posts-navigation a,
+.widget_authors a strong
+{
+  color: $color-2;
+  box-shadow: 0 1px 0 0 $color-2;
+
+  &:active {
+    color: $color-2;
+    box-shadow: 0 3px 0 0 $color-2;
+  }
+
+  &:visited {
+    //color: $wire-visited-1;
+    //box-shadow: 0 1px 0 0;
+  }
+
+  &:hover {
+    color: $color-2;
+    box-shadow: 0 3px 0 0 $color-2;
+  }
+
+  &:focus {
+    color: $color-2;
+    box-shadow: 0 3px 0 0 $color-2;
+  }
+
+}
+
+
+
+.bg-3 a.more-link {
+    border-color: $white;
+  	//background-color: $color-1;
+    //color: $white;
+
+  	&::before {
+  		background-color: $white;
+  	}
+
+  	&::after {
+    //  color: $color-1;
+  	}
+
+  	&:hover, &:focus {
+  	//color: $white;
+  	}
+}
+
+
+// Tag Links
+.entry-footer .cat-links a, .entry-footer .tags-links a {
+  color: $color-1;
+  letter-spacing: 1px;
+  font-weight: 400;
+
+  &:hover{
+  color: $color-1;
+  }
+}
+
+
+.meta-menu-link, .call-button  {
+  background: $color-1;
+  color: $white;
+  display: inline-block;
+  margin-right: 0;
+  padding: .5em;
+  
+      
+    &:hover, &:focus {
+    background-color: $color-2;
+    }
+
+    span::before {
+    margin-right: .5em;
+    font-family: FontAwesome;
+    }
+  }
+
+  .facebook-button {
+  background-color: #3B5998;
+
+    span::before {
+    content: "\f09a";
+    font-family: FontAwesome;
+    }
+  }
+
+  .call-button {
+    span::before {
+    content: "\f095";
+    font-family: FontAwesome;
+    }
+  }
+
+  .email-button {
+    span::before {
+    content: "\f003";
+    font-family: FontAwesome;
+    }
+  }
+
+  .search-button {
+    span::before {
+    content: "\f002";
+    font-family: FontAwesome;
+    }
+  }
+
+  .directions-button {
+    span::before {
+    content: "\f041";
+    font-family: FontAwesome;
+    }
+  }
+
+
+  .listings-button {
+    span::before {
+    content: "\f015";
+    font-family: FontAwesome;
+    }
+  }
+
+
+  .page-content-header-menu {
+  margin: 0;
+  list-style: none;
+  padding: $mod-gap-0 0;
+
+  li {
+  display: inline-block;
+  }
+    a:last-child {
+    margin-right: 0;
+    }
+  }
+
+
+
+@media screen and (min-width: 1em) {
+  // Read More Link
+  a.more-link,
+  .wp-block-button .wp-block-button__link,
+  .wp-block-button__link,
+  {
+  	transition: all 0.4s !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    font-size: 1em;
+  	font-weight: 400;
+  	text-decoration: none;
+  	padding: .5em;
+  	border: 2px solid $color-3;
+  	background-color: $color-1;
+    //color: $white;
+  	display: inline-block;
+  	margin: 0 auto;
+  	position: relative;
+  	text-align: center;
+  	overflow: hidden; // Disable this style to view animated shapes.
+    word-break: keep-all;
+  	z-index: 1;
+
+    &::before {
+      margin-top: 0 !important; // removes default padding from twentyseventeen
+    }
+
+    &::after {
+      align-items: center;
+      justify-content: center;
+      content: "\f061";
+      //color: $color-1;
+      font-family: FontAwesome;
+  		display: block;
+      display: flex;
+  		width: 2em;
+  		height: 100%;
+  		//background-color: $color-3;
+  		margin: 0 auto;
+      opacity: 0;
+  		position: absolute;
+  		top: 0;
+  		bottom:0;
+  		right: 0;
+  		z-index: -1;
+  	}
+
+  	&:hover, &:focus {
+    box-shadow: none !important;
+    background-color: darken($color-1, 3%);
+  	color: $white;
+  	border-radius: .5em;
+    padding-right: 2.5em;
+    outline: none;
+
+      &::after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+      }
+
+  		&::after {
+  			animation-name: spin;
+        animation-iteration-count: 1;
+  			animation-duration: .4s;
+  		}
+  	}
+  }
+
+}
+
+
+@media screen and (min-width: 48em) {
+  // Read More Link
+  a.more-link,
+  .wp-block-button .wp-block-button__link,
+  .wp-block-button__link,
+  {
+  letter-spacing: 1px;
+  }
+
+  .page-content-header-menu {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+
+}
+

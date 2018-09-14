@@ -1,0 +1,63 @@
+.wp-block-quote,
+.wp-block-quote.is-large
+{
+
+color: $color-1;
+background-color: $color-3;
+border: none !important;
+padding: $mod-gap-1;
+
+    p {
+    padding: 0;
+    margin: 0;
+    }
+
+    cite {
+     color: $color-1;
+     font-style: $italic;
+    }
+}
+.wp-block-quote p, .wp-block-quote cite {
+max-width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+.wp-block-quote is-large {
+  padding: $mod-gap-1;
+}
+
+// Remove Default twentyseventeen negative margin
+:not(.has-sidebar) .entry-content blockquote.alignleft {
+margin-left: 0;
+}
+// Remove Default twentyseventeen negative margin
+:not(.has-sidebar) .entry-content blockquote.alignright {
+margin-right: 0;
+}
+
+@media screen and (min-width: 1em) {
+  .wp-block-quote {
+  margin: 0 auto;
+  margin-bottom: $mod-gap-0;
+  }
+}
+
+
+@media screen and (min-width: 48em) {
+  .wp-block-quote {
+    margin: 0 auto;
+    margin-bottom: $mod-gap-2;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+  .wp-block-quote {
+    //smargin: 0 auto;
+    margin-bottom: $mod-gap-2;
+    //margin-bottom: $mod-gap-2;
+  }
+}

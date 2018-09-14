@@ -1,0 +1,14 @@
+.wp-block-table {
+color: $color-2;
+border-color: $color-3;
+margin-bottom: $mod-gap-1;
+
+  td {
+  color: $dark-gray-1;
+  padding: $mod-gap-0;
+  }
+
+  tr {
+  color: $color-3;
+  }
+}

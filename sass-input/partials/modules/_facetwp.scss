@@ -1,0 +1,140 @@
+.facetwp-header {
+background-image: url(../../uploads/2018/07/AdobeStock_60085706_Preview.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+color: $white;
+margin-bottom: $mod-gap-1;
+width: auto;
+position: relative;
+//overflow: hidden;
+z-index: 1;
+
+  // Color Overlay
+  &::before {
+  content: "";
+  background-color: rgba($color-1, .6 );
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  }
+
+  // Widget
+  .widget {
+  padding: $mod-gap-1;
+
+    &.widget_text {
+    text-align: center;
+    }
+
+  }
+
+  .facets {
+  padding: 0 $mod-gap-1 $mod-gap-2 $mod-gap-1;
+  text-align: center;
+    // Facets
+    .facetwp-facet {
+    color: $dark-gray-1;
+    display: inline;
+    }
+  }
+
+}
+
+
+$spinner_radius: 80%;
+$spinner_fill_radius: 90px;
+$spinner_size: 30px;
+$spinner_thickness: 10px;
+$spinner_inner_circle: $spinner_size - $spinner_thickness;
+$spinner_color: darken($color-2, 20%);
+$spinner_bg: $color-2;
+$spinner_inner_bg: $color-1;
+
+// Facet Loading Icon
+.facetwp-header .facetwp-loading {
+border-radius: 80%;
+display: block;
+height: $spinner_size;
+width: $spinner_size;
+margin: 0 auto;
+position: relative;
+background: $spinner_bg;
+
+
+  &:before, &:after {
+  content: "";
+  display: block;
+  position: absolute;
+  }
+
+  &:before {
+  border-radius: 0 $spinner_fill_radius $spinner_fill_radius 0;
+  height: $spinner_size;
+  width: 50%;
+  top: 0; right: 0;
+  z-index: 1;
+  background: $spinner_color;
+  background-image: linear-gradient( $spinner_bg, $spinner_color);
+  }
+
+  &:after {
+  border-radius: $spinner_radius;
+  height: $spinner_inner_circle;
+  width: $spinner_inner_circle;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: $spinner_inner_bg;
+  }
+}
+
+
+
+
+
+.container {
+  z-index: 1;
+  outline: 1px solid red;
+}
+
+
+.facet-container {
+  z-index: 1;
+  width: 100%;
+  max-width: $mw-1;
+
+
+  // Heading
+  .facet-heading {
+  display: block;
+  font-size: 1.8em;
+  margin: 0 auto;
+  text-align: center;
+  }
+
+  // Search Functionality
+  .facet-placeholder {
+  border: 2px solid $color-3;
+  width: 250px;
+  height: 48px;
+  background-color: $white;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  }
+
+
+}
+
+.location-wrap {
+display: inline-block;
+}
+
+
+.locate-me::before {
+position: relative;
+top: 7px;
+}

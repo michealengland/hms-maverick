@@ -1,0 +1,24 @@
+.wp-block-preformatted {
+  color: $white;
+  background-color: $dark-gray-1;
+}
+
+@media screen and (min-width: 1em) {
+  .wp-block-preformatted {
+  padding: $mod-gap-0;
+  }
+}
+
+
+@media screen and (min-width: 48em) {
+  .wp-block-preformatted {
+  padding: $mod-gap-1;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+  .wp-block-preformatted {
+  padding: $mod-gap-2;
+  }
+}
