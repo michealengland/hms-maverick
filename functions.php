@@ -1,100 +1,66 @@
 <?php
-// Enque Parent Theme Style Sheet
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+/**
+ * Enqueue Parent Theme Styles
+ * Note: a value of null is used in the version number to remove from stylesheet url link. 
+ * The minified CSS file is the twentyseventeen CSS File compressed. The parent theme is not minified by default.
+ */
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles', 1 );
 
 function my_theme_enqueue_styles() {
-  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+
+  if( get_theme_mod('hms_twentyseventeen_minifier') == true ) {
+    // serve manually minified style.css
+    wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/parent-min/style.min.css', array(), null, 'all' );
+  } else {
+    // serve normal parent-style
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), null, 'all' );
+  }
+  wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_directory_uri() . '/style.css', array(), null, 'all' );
+
 }
 
-
-
-
+/**
+ * Child Theme Text Domain
+ *
+ * Declare textdomain for this child theme.
+ * Translations can be filed in the /languages/ directory.
+ */
+function my_child_theme_setup() {
+  load_child_theme_textdomain( 'hms-maverick', get_stylesheet_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'my_child_theme_setup' );
 
 /**
- * Enqueue Files
+ * Enqueue Theme Customizer
+ * Note: The theme customizer is for re-usable functionality.
  */
-
-// Functions specific to this site.
 $located = locate_template( '/inc/theme-customizer.php' );
 if( ! empty( $located ) ) {
   get_template_part( '/inc/theme', 'customizer' );
 }
 
-
 /**
- * Check For Update Functionality
+ * Enqueue Theme Settings
+ * Note: Theme settings add support for various features including Gutenberg supports.
  */
-// Functions specific to this site.
-/*
-$located = locate_template( '/inc/theme-updater.php' );
-
-if( ! empty( $located ) ) {
-
-  get_template_part( '/inc/theme-updater' );
-  
-  $updater = new HMS_Maverick_Updater( __FILE__ );
-  $updater->set_username( 'michealengland' );
-  $updater->set_repository( 'hms-maverick' );
-  // $updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
-  $updater->initialize();
-}
-*/
-
-
-// Theme Settings
 $located = locate_template( '/inc/theme-settings.php' );
 if( ! empty( $located ) ) {
   get_template_part( '/inc/theme', 'settings' );
 }
-
-// Site Classes
-$located = locate_template( '/inc/site-classes.php' );
-if( ! empty( $located ) ) {
-  get_template_part( '/inc/site', 'classes' );
-}
-
-// Modules specific to this site.
+/**
+ * Modules Specific to this Site
+ * Note: Code added here should be for unique cases for this site.
+ */
 $located = locate_template( '/inc/site-modules.php' );
 if( ! empty( $located ) ) {
   get_template_part( '/inc/site', 'modules' );
 }
 
-// Functions specific to this site.
+/**
+ * Functions Specific to this Site
+ * Note: Code added here should be for unique cases for this site.
+ */
 $located = locate_template( '/inc/site-functions.php' );
 if( ! empty( $located ) ) {
   get_template_part( '/inc/site', 'functions' );
 }
-
-/**
- * Filter Defualt Excerpt Length
- *
- * @param int $length Excerpt length.
- * @return int (Maybe) modified excerpt length.
- */
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
-
-function wpdocs_custom_excerpt_length( $length ) {
-  return 26;
-}
-
- /**
- * Yoast SEO Breadcrumbs
- */
- function hms_breadcrumbs() {
-   if ( function_exists('yoast_breadcrumb') ) {
-     yoast_breadcrumb('
-     <div id="breadcrumbs">','</div>
-     ');
-   }
- }
-
-/**
-* Remove "Category:" from category titles.
-*/
-function prefix_category_title( $title ) {
-  if ( is_category() OR is_tax() ) {
-    $title = single_cat_title( '', false );
-  }
-  return $title;
-}
-add_filter( 'get_the_archive_title', 'prefix_category_title' );

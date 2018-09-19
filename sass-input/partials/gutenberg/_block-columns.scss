@@ -46,7 +46,6 @@
 
 @media screen and (min-width: 48em) {
   .wp-block-columns {
-  display: grid;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -56,12 +55,6 @@
 
 
     @for $i from 1 through 6 {
-
-      // make columns equal width
-      &.has-#{ $i }-columns {
-      grid-auto-columns: 1fr;
-      grid-gap: 0;
-      }
 
       // Objects in Columns
       &.has-2-columns .wp-block-column
@@ -115,13 +108,4 @@
       }
     }
   }
-
-
-
-
-}
-
-
-@media screen and (min-width: 60em) {
-
 }

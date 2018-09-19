@@ -7,7 +7,7 @@
 ( function( $ ) {
 
 	// Update the site footer in real time...
-	wp.customize( 'fg_footer_credits', function( value ) {
+	wp.customize( 'hms_footer_credits', function( value ) {
 		value.bind( function( newval ) {
 			$( '.site-info .credits' ).html( newval );
 		} );

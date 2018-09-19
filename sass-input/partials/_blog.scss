@@ -252,7 +252,7 @@
   .post-type-archive-mls .site-main,
   .tax-mls_cats .site-main,
   .tax-areas .site-main,
-  .blog .site-main // Blog Home Page
+  //.blog .site-main // Blog Home Page
   {
   align-items: flex-start;
   display: flex;
@@ -261,44 +261,6 @@
   padding: 0 $global-spacing-1;
   }
 
-
-  // Category Flex Layout
-  .blog .site-main {
-
-    .post-tile {
-    flex: 0 1 50%;
-    max-width: calc(50% - 12.5px);
-
-      &:nth-child( 1 ),
-      &:nth-child( 2 ),
-      &:nth-child( 3 )
-      {
-      flex: 0 1 33.33%;
-      max-width: calc(33% - 12.5px );
-      }
-    }
-  }
-
-  // Category Flex Layout
-  .category .site-main,
-  .post-type-archive-mls .site-main,
-  .tax-mls_cats .site-main,
-  .tax-areas .site-main
-  {
-
-    //justify-content: flex-start;
-
-    .post {
-    flex: 0 1 50%;
-    max-width: calc(50% - 12.5px);
-
-      &::after:last-child {
-      content: "";
-      display: block;
-      flex: 0 1 auto;
-      }
-    }
-  }
 }
 
 
@@ -310,38 +272,19 @@
 
   .category .site-main,
   .archive .site-main,
-  .blog .site-main // Blog Home Page
   {
   padding: 0 $global-spacing-2;
   }
-
-  // Category Flex Layout
-  .category .site-main,
-  .post-type-archive-mls .site-main,
-  .tax-mls_cats .site-main,
-  .tax-areas .site-main
-  {
-
-    .post {
-    flex: 0 1 25%;
-    max-width: calc(25% - 12.5px);
-    }
-
-  }
-
-
 }
 
 @media screen and (min-width: 80em) {
 
   .single .site-main,
-  .blog .site-main,
   .category .site-main,
   .post-type-archive-mls .site-main,
   .tax-mls_cats .site-main,
   .tax-areas .site-main,
-  .archive .site-main,
-  .blog .site-main // Blog Home Page
+  .archive .site-main
   {
   padding: 0 $global-spacing-3;
   }

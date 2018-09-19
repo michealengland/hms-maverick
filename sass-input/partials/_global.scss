@@ -1,16 +1,10 @@
-// Main Menu Wrapper
-.navigation-top .wrap {
-  max-width: 100%;
-  padding: .75em $mod-gap-1;
-}
-
 .site-content-contain {
-  background-color: $site_bg; // Site Background Color
+background-color: $site_bg; // Site Background Color
 
-    // Inner Content Container
-    .site-content {
-    padding: 0;
-    }
+  // Inner Content Container
+  .site-content {
+  padding: 0;
+  }
 }
 
 .page:not(.home) #content {
@@ -24,18 +18,11 @@ padding-bottom: 0;
   padding: 0;
 }
 
-// Fixes Issue with spacing
-.entry-content.flex-tiles::before,
-.entry-content.flex-tiles::after {
-display: none;
-}
-
-
 // Single Column Layouts Without Sidebars
 .page-one-column .panel-content .wrap,
 .single-post:not(.has-sidebar) #primary,
-.archive.has-sidebar:not(.error404) #primary,
-.blog.has-sidebar:not(.error404) #primary,
+//.archive.has-sidebar:not(.error404) #primary,
+//.blog.has-sidebar:not(.error404) #primary,
 .page.page-one-column:not(.twentyseventeen-front-page) #primary,
 .post-type-archive-mls.has-sidebar:not(.error404) #primary,
 .post-type-archive-mls.has-sidebar:not(.error404) #primary,
@@ -51,26 +38,23 @@ display: none;
   margin: 0;
 }
 
-
-
-
-// Footer Width
-.site-footer .wrap {
-//  max-width: 100%;
-//  padding: 0;
-}
-
-
-
 @media screen and (min-width: 1em) {
-  .entry-content {
-   padding: 0 $global-spacing;
+  .site-content {
+    margin-top: 4em;
+  }
+
+  .site-content .wrap, 
+  .entry-content
+  {
+  padding: 0 $global-spacing;
   }
 }
 
 
 @media screen and (min-width: 48em) {
-  .entry-content {
+  .site-content .wrap, 
+  .entry-content
+  {
    padding: 0 $global-spacing-1;
   }
 }
@@ -83,7 +67,9 @@ display: none;
 }
 
 @media screen and (min-width: 80em) {
-  .entry-content {
+  .site-content .wrap, 
+  .entry-content
+  {
     padding: 0 $global-spacing-3;
   }
 }

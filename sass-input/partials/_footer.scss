@@ -3,214 +3,138 @@
 background-color: $color-1;
 border: none;
 margin: 0;
-  // Inner Container
-  .wrap {
-  max-width: 100%;
-  padding: 0;
 
-    // Widget Area aside
-    .widget-area {
-    max-width: $mw-1;
-    margin: 0 auto;
-    }
-
-    .social-navigation {
-    float: none;
-    width: 100%;
-    }
-
-  }
-
-  // Footer Credits
+  // clear twentyseventeen defaults
   .site-info {
-  background-color: $color-1;
-  color: $white;
-  float: none;
   margin-left: 0;
-  text-align: center;
-  width: 100%;
-
-    p {
-    color: $white;
-    }
-
-    a {
-    color: $color-2;
-    box-shadow: 0 1px 0 0 $color-2;
-
-      &:hover, &:focus {
-        color: $color-3;
-        box-shadow: 0 3px 0 0 $color-3;
-      }
-    }
   }
 
+  // Footer Widget Styles
   .widget {
   color: $white;
 
     .widget-title {
-    color: $white;
-    font-size: 1.2em;
-    margin-bottom: .5em;
-    padding: 0;
-    font-weight: $bold;
-    text-transform: none; // Remove Uppercase
+    color: $widget-footer-title-color;
     letter-spacing: 1px;
+    margin: 0;
+    text-transform: none; // Remove Uppercase
     }
 
     ul li {
-
-      a {
-      color: $color-3;
-      box-shadow: 1px solid $color-3;
-      padding-bottom: .2em;
-
-        &:hover {
-        box-shadow: 1px solid $color-2;
-        }
-      }
+      @extend %link-style-1;
     }
   } // .widget
-}
+} // .site-footer
+
+// Clear twentyseventeen defaults
+// Footer Credits
+.site-info {
+background-color: $color-1;
+color: $white;
+text-align: center;
+width: 100%;
 
 
-// Footer Inner Containers
-.site-footer {
-  aside, .site-info {
-    max-width: $mw-1;
-    padding: 0 50px;
-    margin-left: auto;
-    margin-right: auto;
+  // Credits
+  .credits {
+  margin-bottom: 0;
+  }
+
+  .dev-credits {
+  font-size: .8em;
+  }
+
+  p {
+  color: $white;
+  margin: 0;
+  padding: 0;
+  }
+
+  a {
+  color: $color-2;
+  box-shadow: none;
+
+    &:hover, &:focus {
+    box-shadow: none;
+    color: $color-3;
+    }
   }
 }
-
 
 // Remove Box Shadow from Social Icons
-.social-navigation li {
-  a, a:hover, a:focus {
-  box-shadow: none;
+.social-navigation {
+display: inline-block;
+float: none;
+width: 100%;
+
+  // ul
+  .social-links-menu {
+  text-align: center;
   }
-}
 
-// Social Navigation Footer
-.site-footer .widget-area .social-navigation li a {
-color: $white;
-background-color: $color-1;
-border: 2px solid lighten( $color-2, 10% );
-border-radius: 0;
-box-shadow: none;
+  li {
+  display: inline-block;
+  padding: 0;
 
-  &:hover, &:focus {
-  color: $white;
-  background-color: darken($color-1, 5%);
-  border: 2px solid $color-3;
+    a {
+    color: $white;
+    background-color: $color-1;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+
+      &:hover, &:focus {
+      color: $white;
+      box-shadow: none;
+      background-color: darken($color-1, 5%);
+      outline: none;
+      }
+    }
   }
-}
-
-// Credits
-.credits {
-  font-size: 1.2em;
-  margin-bottom: 0;
 }
 
 
 @media screen and (min-width: 1em) {
-  .site-footer .widget-area {
+  .site-footer .wrap {
   padding: $mod-gap-1 $global-spacing;
-  }
+  max-width: 100%;
 
-  .site-footer .widget-column {
-  padding: .5em;
-    &.footer-widget-1,
-    &.footer-widget-2 {
-    width: 100%;
+    // Widget Area aside
+    .widget-area {
+    margin: 0 auto;
+    padding: 0;
     }
-  }
 
-  // Footer Column 1
-  &.footer-widget-1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-    .widget {
-    flex: 1 0 50%;
-    max-width: 50%;
-    }
-  }
-}
-
-@media screen and (min-width: 20em) {
-  .site-footer .widget-column {
-    // Footer Column 1
-    &.footer-widget-1 {
-
-      .widget {
-      flex: 1 0 auto;
-      max-width: 100%;
-      }
+    
+    .widget-title {
+    font-size: $widget-footer-title-0;
+    font-weight: $regular;
     }
   }
 }
 
 @media screen and (min-width: 48em) {
-  .site-footer .widget-area {
-  display: flex;
-  justify-content: space-around;
+  .site-footer .wrap {
   padding: $mod-gap-2 $global-spacing-1;
-  }
 
-  .site-footer .widget-column {
-    // Footer Column 1
-    &.footer-widget-1 {
-    max-width: 70%;
-    padding-right: 2em;
-
-      .widget {
-      flex: 1 0 50%;
-      max-width: 50%;
-      }
+    .widget-title {
+    font-size: $widget-footer-title-1;
     }
-
-    // Footer Column 2
-    &.footer-widget-2 {
-    max-width: 30%;
-    }
-
   }
-
 }
 
 @media screen and (min-width: 60em) {
-  .site-footer .widget-area {
+  .site-footer .wrap {
   padding: $mod-gap-2 $global-spacing-2;
-  }
 
-  .site-footer .widget-column {
-    // Footer Column 1
-    &.footer-widget-1 {
-    max-width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    padding-right: 2em;
-
-      .widget {
-      flex: 1 0 auto;
-      max-width: 100%;
-      }
-    }
-
-    // Footer Column 2
-    &.footer-widget-2 {
-    max-width: 30%;
+    .widget-title {
+    font-size: $widget-footer-title-2;
     }
   }
 }
 
 @media screen and (min-width: 80em) {
-  .site-footer .widget-area {
+  .site-footer .wrap {
   padding: $mod-gap-2 $global-spacing-3;
   }
 }

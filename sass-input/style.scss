@@ -13,30 +13,27 @@ Text Domain:    hms-maverick
 
 //CORE STYLING
 @import "partials/variables";                       // Variables used in the site MUST BE LOADED FIRST
+@import "partials/extensions";                      // This file contains repeatable style modules
+@import "partials/global";                          // Styling that affects the whole site
+@import "partials/navigation";                      // Navigation
+@import "partials/gutenberg/index";                 // Gutenberg Blocks
 
 //GENERAL PARTIALS
-@import "partials/animation";                       // Animations
 @import "partials/blog";                            // Post Styling
 @import "partials/captions";                        // Caption Styling
-@import "partials/comments";                        // Comment Styling
+//@import "partials/comments";                        // Comment Styling
 @import "partials/footer";                          // Footer Styles
 @import "partials/forms";                           // Gravity Form Styling
-@import "partials/global";                          // Styling that affects the whole site
 @import "partials/gravity-forms/field-hooks";       // Gravity Form Field Styles
 @import "partials/link-states";                     // Link States
-@import "partials/gutenberg/index";           // Gutenberg Blocks
-@import "partials/navigation";                      // Navigation
 @import "partials/pagination";                      // Pagination
 @import "partials/plugin-mods";                     // Modifications for a specific plugin
 @import "partials/special-cases";                   // Arbitrary styling that should only occur in unique instances
 @import "partials/typography";                      // Use for general font styles
 @import "partials/widget-styles";                   // Widget Styles
 
-// Modules
-@import "partials/modules/facetwp";                 // Facet WP Fields
-@import "partials/modules/page-header";             // Custom Page Heading .page-header
-@import "partials/modules/featured-image";          // Featured Image
-@import "partials/modules/agents";                  // Agents Custom Post Type
+// Import non important styles
+@import "partials/animation";                       // Animations
 
-// This File MUST COME LAST
-@import "partials/media-queries";                   // MEDIA QUERIES MUST BE LAST
+// Modules
+@import "partials/modules/page-header";             // Custom Page Heading .page-header

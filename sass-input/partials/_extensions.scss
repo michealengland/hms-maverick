@@ -1,0 +1,14 @@
+// This CSS won't print because %equal-heights is never extended.
+%link-style-1 {
+    a {
+    color: $widget-footer-link;
+    box-shadow: 1px solid $color-3;
+    padding-bottom: .2em;
+
+        &:hover {
+        box-shadow: 1px solid $color-2;
+        }
+    }
+  }
+
+ 
