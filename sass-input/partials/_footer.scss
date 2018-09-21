@@ -21,7 +21,10 @@ margin: 0;
     }
 
     ul li {
-      @extend %link-style-1;
+      a{
+      @extend %footer-widget-link;
+      }
+      
     }
   } // .widget
 } // .site-footer
@@ -50,14 +53,10 @@ width: 100%;
   padding: 0;
   }
 
-  a {
-  color: $color-2;
-  box-shadow: none;
+  
 
-    &:hover, &:focus {
-    box-shadow: none;
-    color: $color-3;
-    }
+  a {
+  @extend %footer-links;
   }
 }
 

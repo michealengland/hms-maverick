@@ -1,11 +1,23 @@
 .nav-links .nav-title {
-color: $color-2;
 
-  &:hover {
-  color: $color-2;
+  .nav-next, .nav-previous {
+  @extend %basic-link;
+  }
+  
+
+  .icon {
+  fill: $color-1;
   }
 
-  &:focus {
-  color: $color-2;
+}
+
+// Post Navigation
+.post-navigation {
+  a {
+  @extend %basic-link;
   }
+}
+
+.edit-link .post-edit-link {
+ @extend %basic-link;
 }

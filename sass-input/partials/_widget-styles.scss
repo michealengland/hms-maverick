@@ -22,5 +22,10 @@ position: relative;
 
 // Remove defualt borders on list items
 .widget ul li, .widget ol li {
-  border: none;
+border: none; // remove twentyseveteen default
+
+  a {
+  @extend %sidebar-widget-link;
+  }
+  
 }

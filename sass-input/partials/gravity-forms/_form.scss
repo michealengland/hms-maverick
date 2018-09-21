@@ -1,37 +1,37 @@
 // Form Wrapper
 .gform_wrapper {
-    background-color: $color-1;
-    margin: 1em 0;
-    padding: 1em;
+background-color: $color-1;
+margin: 1em 0;
+padding: 1em;
 
-    .gform_heading {
-      margin-bottom: 1em;
-    }
+  .gform_heading {
+  margin-bottom: 1em;
+  }
 
-    // Remove Bullets from List Items
-    ul {
-      list-style: none;
-    }
+  // Remove Bullets from List Items
+  ul {
+  list-style: none;
+  }
 
-    // List of Fields
-    .gform_fields {
+  // List of Fields
+  .gform_fields {
 
-      // Field lo
-      .gfield {
-      margin-bottom: 1em;
+    // Field lo
+    .gfield {
+    margin-bottom: 1em;
 
-        // Normal Labels
-        label {
-        font-weight: 400;
-        }
+      // Normal Labels
+      label {
+      font-weight: 400;
+      }
 
-        // Field Labels
-        .gfield_label {
-        font-weight: 600;
-        font-size: 1.2em;
-        }
+      // Field Labels
+      .gfield_label {
+      font-weight: 600;
+      font-size: 1.2em;
       }
     }
+  }
 }
 
 // Gravity Forms Header
@@ -42,39 +42,10 @@
     font-size: 1.8em;
     margin-bottom: .5em;
   }
-  // Form Description
-  .gform_description {
-
-  }
 }
 
-// Gravity Forms Footer
-.gform_footer {
-
-}
-
-// Disable Spacing on certain blocks.
-.wp-block-hms-innerblocks,
-.wp-block-hms-cover-img
-{
+.wp-block-hms-cover-img {
   .gform_wrapper {
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-
-    form {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    }
-  }
-}
-
-.wp-block-hms-cover-img
-{
-  .gform_wrapper {
-
-
     form {
 
       .gform_heading .gform_title {
@@ -84,12 +55,9 @@
       label {
       color: $white;
       }
-
     }
   }
 }
-
-
 
 // Fix issues with name field
 html div.ginput_complex.ginput_container.gf_name_has_2 span:first-child,

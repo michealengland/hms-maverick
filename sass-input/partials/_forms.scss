@@ -1,17 +1,13 @@
+// Comment Form Submit
+.form-submit {
+text-align: left;
+}
+
 // Button Styling
 button,
 input[type="button"],
 input[type="submit"] {
-background: $color-2;
-
-  &:hover {
-    background: $color-3;
-  }
-
-  &:focus {
-    background: $color-3;
-  }
-
+  @extend %basic-button;
 }
 
 // General Field Styling
@@ -31,14 +27,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-color: $color-2;
-border-color: $color-2;
-padding: .2em;
-
-  &:focus {
-    color: $color-2;
-    border-color: $color-2;
-  }
+  padding: .2em;
+  @extend %form-field-color-scheme;
 }
 
 // Select Field Generic Styling

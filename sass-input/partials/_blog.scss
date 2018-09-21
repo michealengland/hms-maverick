@@ -1,36 +1,49 @@
+// Post Thumbnail 
+.post-thumbnail {
+  a {
+  @extend %post-thumbnail-link;
+  }
+}
+
+
+// Blog Stikcy Post 
+.icon.icon-thumb-tack {
+  fill: $color-1;
+  font-size: .7em;
+  height: 1.5em;
+  padding: .2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+}
+
+.entry-title {
+  a {
+  @extend %post-title-link;
+  }
+}
+
+// Read More Button
+.link-more .more-link {
+  @extend %post-link-more;
+}
+
+.entry-meta {
+  a {
+    display: inline-block;
+    opacity: 1; // override twentyseventeen default
+    @extend %basic-link;
+  }
+}
+
+
 @media screen and (min-width: 1em) {
 
-  .single .site-main,
-  .category .site-main,
-  .archive .site-main,
-  .post-type-archive-mls .site-main,
-  .tax-mls_cats .site-main,
-  .tax-areas .site-main,
-  .blog .site-main, // Blog Home Page
-  .post-type-archive-agents .site-main // SPECIAL CASE
-  {
-  margin: 0 auto;
-  padding: 0 $global-spacing;
-
-    article {
-    padding-bottom: $mod-gap-1;
-    }
+  .page.page-one-column .entry-header {
+  margin-bottom:0; // override twentyseventeen default
   }
-
-
-
-  .entry-meta{
-  color: $color-1;
-    a {
-    color: $color-2;
-    opacity: 1;
-    }
-  }
-
-  .taxonomy-description {
-  color: $dark-gray-1;
-  }
-
+  
   #breadcrumbs {
   color: $color-1;
   flex: 1 0 auto;
@@ -50,242 +63,29 @@
   font-weight: $bold;
   }
 
-  // Post Feed Articles
-  .hfeed:not(.search) article {
-  width: 100%;
-
-    a {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: none;
-    display: block;
-    position: relative;
-    overflow: hidden;
-
-      &::before {
-      background-color: rgba($black, .5);
-      background: $linear-gradient-1;
-      color: $white;
-      content: "";
-      display: flex;
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      z-index: 0;
-      }
-
-      &:hover, &:focus {
-      box-shadow: none;
-
-        &::before {
-        background: $linear-gradient-1-hover;
-        }
-      }
-
-      &:focus {
-      outline: 2px solid $color-2;
-      }
-    }
-
-
-
-    // Post Image Hover Arrow Icon
-    &.post a {
-
-      &:hover, &:focus {
-
-        &::before {
-        background: $linear-gradient-1-hover;
-        content: "\f061";
-        font-size: 1.4em;
-        font-family: FontAwesome;
-        }
-      }
-
-      img {
-      width: 100%;
-      }
-    }
-
-    // Normal Post
-    &.post .post-title {
-    color: $white;
-    font-size: 1.5em;
-    font-weight: 700;
-    padding: 0;
-    margin-bottom: 0;
-    position: relative;
-    z-index: 1;
-    }
-  } // .hfeed article
-
-
-  // Category Flex Layout
-  .category .site-main,
-  .post-type-archive-mls .site-main,
-  .tax-mls_cats .site-main,
-  .tax-areas .site-main,
-  .post-type-archive-agents .site-main // SPECIAL CASE
-  {
-  align-items: flex-start;
-  justify-content: flex-start;
-
-    .sticky-post {
-      flex: 1 0 100%;
-
-      a {
-      align-items: center;
-      display: flex;
-      color: $white;
-      min-height: 400px;
-      justify-content: center;
-
-        &::before {
-        background: $linear-gradient-panel-img;
-        }
-
-      }
-
-      .entry-title {
-      font-weight: $thick;
-      z-index: 2;
-
-        &::after {
-        content: "\f061";
-        margin-left: $mod-gap-0;
-        font-family: FontAwesome;
-        }
-      }
-
-    }
-
-    .post {
-      h2.entry-title,
-      .entry-title {
-      font-size: unset;
-      font-size: 1.2em;
-      }
-
-      img {
-      display: block;
-      width: 100%;
-      }
-    }
-  }
-
-  // Category Flex Layout
-  .blog .site-main {
-
-    .post-tile {
-
-      .post-title {
-      color: $white;
-      font-size: 1.5em;
-      font-weight: 700;
-      padding: 0;
-      margin-bottom: 0;
-      padding: $mod-gap-0;
-      z-index: 1;
-      }
-
-      a {
-      align-items: flex-end;
-      display: flex;
-      min-height: 300px;
-      position: relative;
-      }
-
-      .post-description p {
-      padding: $mod-gap-0;
-      }
-    }
-  }
-
   .entry-footer, .post-navigation .nav-links {
   padding: $mod-gap-1;
   }
-
-
-  // Singular Blog Page
-  .single-post.has-sidebar:not(.error404) #primary {
-  float: none;
-  margin: 0 auto;
-  width: 100%;
-
-    .entry-content {
-    padding: 0;
-    max-width: 1000px;
-    margin: 0 auto;
-    }
-  }
-
-  .single-post .entry-title,
-  .page .entry-title
-  {
-  font-size: 3em;
-  }
-
-
-  .single-post .page-header .inner-wrap,
-  .entry-footer,
-  .comments-area,
-  {
-  margin: 0 auto;
-  max-width: 1000px;
-  width: 100%;
-  }
-
 }
 
 
 @media screen and (min-width: 48em) {
-
-  .single .site-main {
-  padding: 0 $global-spacing-1;
+  // Blog Stikcy Post 
+  .icon.icon-thumb-tack {
+  position: absolute;
+  left: -1em;
   }
-
-  .category .site-main,
-  .archive .site-main,
-  .post-type-archive-mls .site-main,
-  .tax-mls_cats .site-main,
-  .tax-areas .site-main,
-  //.blog .site-main // Blog Home Page
-  {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 $global-spacing-1;
-  }
-
 }
 
 
 @media screen and (min-width: 60em) {
-
-  .single .site-main {
-  padding: 0 $global-spacing-2;
-  }
-
-  .category .site-main,
-  .archive .site-main,
-  {
-  padding: 0 $global-spacing-2;
+  // Blog Stikcy Post 
+  .icon.icon-thumb-tack {
+  position: absolute;
+  left: -1.5em;
   }
 }
 
 @media screen and (min-width: 80em) {
 
-  .single .site-main,
-  .category .site-main,
-  .post-type-archive-mls .site-main,
-  .tax-mls_cats .site-main,
-  .tax-areas .site-main,
-  .archive .site-main
-  {
-  padding: 0 $global-spacing-3;
-  }
 }

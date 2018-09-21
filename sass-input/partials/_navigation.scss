@@ -22,6 +22,7 @@
     .wrap {
     padding: $mod-gap-0 $global-spacing;
     margin: 0; // remove twentyseventeen defualt
+    max-width: 100%; // remove twentyseveteen default
     }
   }
 
@@ -60,7 +61,7 @@
     padding: 0; // remove default twentyseventeen
 
       li {
-      padding-bottom: 0; // remove generic padding
+      padding-bottom: 0; // remove generic padding  
 
         a {
         display: inline-block; // Important for non full width border
@@ -74,13 +75,19 @@
     }
 
     .sub-menu {
-    background-color: darken($color-1, .2%);
-    border: none;      
+    background: inherit;
+    border: none;
+
+      li {
+        &:hover {
+        //background-color: $color-3 !important;
+        }
+      }
     }
 
     li li {
       &:hover {
-      background-color: $color-3;
+      background-color: $color-3; // overrides default twentyseventeen
       }
     }
   }
@@ -92,7 +99,8 @@
   // submenu border arrow
   .main-navigation ul li.menu-item-has-children::after,
   .main-navigation ul li.page_item_has_children::after {
-  border-color: transparent transparent $color-3;
+  border-color: transparent transparent darken($color-1, 5%);
+  bottom: 0;
   }
 
   // Disable outline around submenu border arrow
@@ -105,7 +113,6 @@
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_item > a
   {
-    //box-shadow: 0 2px 0 0 $color-3;
     color: $color-3;
   }
 
@@ -118,6 +125,7 @@
     font-size: 1.4em;
   
       a {
+      
       display: inline-block;
       padding: 0;
       }
@@ -131,7 +139,6 @@
   
     .menu-primary-menu-container {
     display: inline-block;
-    //margin-left: 0; // remove twentyseventeen default
     width: calc(100% - 70px); // Offset for Logo
 
       .menu {
@@ -144,6 +151,16 @@
         }
       }
     } // .menu-primary-menu-container
+
+    .sub-menu {
+    background-color: darken($color-1, 5%);
+    }
+
+    li li {
+      &:hover {
+      background-color: darken($color-1, 10%); // overrides default twentyseventeen
+      }
+    }
   }
 
   // Logo

@@ -14,6 +14,14 @@ padding-bottom: $mod-gap-0;
 margin: 0;
 }
 
+.has-small-font-size {
+
+}
+
+.has-medium-font-size {
+
+}
+
 .has-large-font-size {
 padding-bottom: 0;
 font-weight: $bold;
@@ -23,10 +31,6 @@ ul, ol {
 margin: 0 0 0 1.3em; // Offset list for bullet styles
 text-align: left;
 }
-
-
-
-
 
 @media screen and (min-width: 1em) {
   body {

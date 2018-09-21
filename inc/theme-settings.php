@@ -5,8 +5,51 @@ defined('ABSPATH') || exit;
 
  function hms_mav_setup_theme_support() {
 
-    // Conditionally add gutenberg editor swatches
-    add_theme_support( 'editor-color-palette', get_active_swatches() );
+
+  add_theme_support( 'editor-color-palette', array(
+    array(
+      'name' => __( 'Color 1', 'hms-maverick' ),
+      'slug' => 'color-1',
+      'color' => '#00263e',
+    ),
+    array(
+      'name' => __( 'Color 2', 'hms-maverick' ),
+      'slug' => 'color-2',
+      'color' => '#d15e14',
+    ),
+    array(
+      'name' => __( 'Color 3', 'hms-maverick' ),
+      'slug' => 'color-3',
+      'color' => '#73c3d5',
+    ),
+    array(
+      'name' => __( 'Color 4', 'hms-maverick' ),
+      'slug' => 'color-4',
+      'color' => '#decc62',
+    ),
+    array(
+      'name' => __( 'Color 5', 'hms-maverick' ),
+      'slug' => 'color-5',
+      'color' => '#8c837b',
+    ),
+    array(
+      'name' => __( 'Color 6', 'hms-maverick' ),
+      'slug' => 'color-6',
+      'color' => '#b4aca4',
+    ),
+    array(
+      'name' => __( 'Color 7', 'hms-maverick' ),
+      'slug' => 'color-7',
+      'color' => '#222222',
+    ),
+
+    array(
+      'name' => __( 'White', 'hms-maverick' ),
+      'slug' => 'white',
+      'color' => '#ffffff',
+    ),
+  ) );
+
 
     // Optin to Block Styles
     add_theme_support( 'wp-block-styles' );
@@ -15,7 +58,7 @@ defined('ABSPATH') || exit;
     add_theme_support( 'align-wide' );
     
     // Disable Custom Colors in Blocks
-    add_theme_support( 'disable-custom-colors' );
+    //add_theme_support( 'disable-custom-colors' );
 
 }
 
@@ -147,3 +190,5 @@ function get_active_swatches() {
 
   return $hms_gutenberg_pallete;
 }
+
+

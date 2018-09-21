@@ -25,7 +25,6 @@ Text Domain:    hms-maverick
 @import "partials/footer";                          // Footer Styles
 @import "partials/forms";                           // Gravity Form Styling
 @import "partials/gravity-forms/field-hooks";       // Gravity Form Field Styles
-@import "partials/link-states";                     // Link States
 @import "partials/pagination";                      // Pagination
 @import "partials/plugin-mods";                     // Modifications for a specific plugin
 @import "partials/special-cases";                   // Arbitrary styling that should only occur in unique instances
@@ -34,6 +33,3 @@ Text Domain:    hms-maverick
 
 // Import non important styles
 @import "partials/animation";                       // Animations
-
-// Modules
-@import "partials/modules/page-header";             // Custom Page Heading .page-header

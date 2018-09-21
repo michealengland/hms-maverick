@@ -64,3 +64,19 @@ $located = locate_template( '/inc/site-functions.php' );
 if( ! empty( $located ) ) {
   get_template_part( '/inc/site', 'functions' );
 }
+
+
+/**
+ * Enqueue maverick-editor-styles.css for Gutenberg Editor.
+ * Note: Plugin specific styles may also be added here for HMS Blocks.
+ */
+add_action( 'enqueue_block_editor_assets', 'maverick_editor_styles' );
+
+function maverick_editor_styles() {
+	wp_enqueue_style(
+		'maverick-block-editor-styles',
+		get_stylesheet_directory_uri() . '/editor.css',
+		array( 'wp-blocks' ),
+		filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' )
+	);
+}

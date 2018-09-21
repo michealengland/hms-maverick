@@ -1,6 +1,6 @@
 @media screen and (min-width: 1em) {
 
-  .wp-block-cover-image {
+  .wp-block-cover-image, {
   align-items: center;
   color: $white;
   display: flex;
@@ -63,63 +63,10 @@
     margin-right: auto !important;
     }
 
-    // Set background color dimness based on block range control
-    @for $i from 1 through 10 {
-
-      &.has-color-1-overlay-color.has-background-dim-#{ $i * 10 }{
-        &::before {
-        background-color: rgba( darken( $color-1, 5%), $i * 0.1  );
-        }
-      }
-
-      &.has-color-2-overlay-color.has-background-dim-#{ $i * 10 } {
-        &::before {
-        background-color: rgba( darken( $color-2, 5%), $i * 0.1  );
-        }
-      }
-
-      &.has-color-3-overlay-color.has-background-dim-#{ $i * 10 } {
-        &::before {
-        background-color: rgba( darken( $color-3, 40%), $i * 0.1  );
-        }
-      }
-
-      &.has-color-4-overlay-color.has-background-dim-#{ $i * 10 } {
-        &::before {
-        background-color: rgba( darken( $color-4, 50%), $i * 0.1  );
-        }
-      }
-
-      &.has-color-5-overlay-color.has-background-dim-#{ $i * 10 }::before {
-        background-color: rgba( darken( $color-5, 25%), $i * 0.1  );
-      }
-
-      &.has-color-6-overlay-color.has-background-dim-#{ $i * 10 }::before {
-        background-color: rgba( darken( $color-6, 35%), $i * 0.1  );
-      }
-
-      &.has-color-7-overlay-color.has-background-dim-#{ $i * 10 }::before {
-        background-color: rgba( $dark-gray-1, $i * 0.1  );
-      }
-
-      &.has-white-overlay-color.has-background-dim-#{ $i * 10 } {
-      color: $color-1;
-
-        &::before {
-        background-color: rgba( $white, $i * 0.1  );
-        }
-
-        a {
-        box-shadow: 0 1px 0 0 $color-1;
-        color: $color-1;
-
-          &:hover, &:focus {
-          box-shadow: 0 3px 0 0 $color-2;
-          color: $color-2;
-          }
-        }
-      }
+    &.wp-block-hms-cover-img {
+      @extend %gutenberg-overlay-pallette;
     }
+
 
     // Fixes nested flex blocks in IE11
     .wp-block-hms-innerblocks-cta {
