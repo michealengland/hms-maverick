@@ -10,37 +10,37 @@ defined('ABSPATH') || exit;
     array(
       'name' => __( 'Color 1', 'hms-maverick' ),
       'slug' => 'color-1',
-      'color' => '#00263e',
+      'color' => get_theme_mod('hms_gutenberg_color_1'),
     ),
     array(
       'name' => __( 'Color 2', 'hms-maverick' ),
       'slug' => 'color-2',
-      'color' => '#d15e14',
+      'color' => get_theme_mod('hms_gutenberg_color_2'),
     ),
     array(
       'name' => __( 'Color 3', 'hms-maverick' ),
       'slug' => 'color-3',
-      'color' => '#73c3d5',
+      'color' => get_theme_mod('hms_gutenberg_color_3'),
     ),
     array(
       'name' => __( 'Color 4', 'hms-maverick' ),
       'slug' => 'color-4',
-      'color' => '#decc62',
+      'color' => get_theme_mod('hms_gutenberg_color_4'),
     ),
     array(
       'name' => __( 'Color 5', 'hms-maverick' ),
       'slug' => 'color-5',
-      'color' => '#8c837b',
+      'color' => get_theme_mod('hms_gutenberg_color_5'),
     ),
     array(
       'name' => __( 'Color 6', 'hms-maverick' ),
       'slug' => 'color-6',
-      'color' => '#b4aca4',
+      'color' => get_theme_mod('hms_gutenberg_color_6'),
     ),
     array(
       'name' => __( 'Color 7', 'hms-maverick' ),
       'slug' => 'color-7',
-      'color' => '#222222',
+      'color' => get_theme_mod('hms_gutenberg_color_7'),
     ),
 
     array(
@@ -60,6 +60,13 @@ defined('ABSPATH') || exit;
     // Disable Custom Colors in Blocks
     //add_theme_support( 'disable-custom-colors' );
 
+    /*
+		 * Let WordPress manage the document title.
+		 * By adding theme support, we declare that this theme does not use a
+		 * hard-coded <title> tag in the document head, and expect WordPress to
+		 * provide it for us.
+		 */
+    add_theme_support( 'title-tag' );
 }
 
 /**
@@ -192,3 +199,39 @@ function get_active_swatches() {
 }
 
 
+/**
+* Disable Logo Upload Force Crop
+*/
+add_action( 'after_setup_theme', 'logo_size_change', 11 );
+
+function logo_size_change(){
+	remove_theme_support( 'custom-logo' );
+	add_theme_support( 'custom-logo', array(
+	    'height'      => 100,
+	    'width'       => 400,
+	    'flex-height' => true,
+	    'flex-width'  => true,
+	) );
+}
+
+
+/*
+* Register Custom Social Menu for Header
+*/
+
+// Register Custom Menus
+if ( ! function_exists( 'hms_menu' ) ) {
+
+  function hms_menu() {
+      $locations = array(
+    'secondary-menu' => __( 'Secondary Menu', 'hms-maverick' ),
+    'social-header' => __( 'Header Social', 'hms-maverick' ),
+      );
+
+    register_nav_menus( $locations );
+
+  }
+
+add_action( 'init', 'hms_menu' );
+
+}

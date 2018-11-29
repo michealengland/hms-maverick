@@ -1,6 +1,6 @@
 // Footer Outermost Container
 .site-footer {
-background-color: $color-1;
+background-color: $site_footer_bg;
 border: none;
 margin: 0;
 
@@ -15,9 +15,14 @@ margin: 0;
 
     .widget-title {
     color: $widget-footer-title-color;
+    font-weight: $thick;
     letter-spacing: 1px;
     margin: 0;
     text-transform: none; // Remove Uppercase
+    }
+
+    p {
+    color: $white;
     }
 
     ul li {
@@ -32,7 +37,7 @@ margin: 0;
 // Clear twentyseventeen defaults
 // Footer Credits
 .site-info {
-background-color: $color-1;
+background-color: $site_footer_credits_bg;
 color: $white;
 text-align: center;
 width: 100%;

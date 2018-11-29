@@ -7,12 +7,29 @@ background-color: $site_bg; // Site Background Color
   }
 }
 
+.single-featured-image-header {
+background-color: $featured-image-header-bg;
+background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/brickwall.png');
+background-size: auto;
+background-repeat: repeat;
+background-attachment: fixed;
+
+  img {
+  width: 100%;
+  }
+}
+
 .page:not(.home) #content {
 padding-bottom: 0;
 }
 
+.page-one-column .panel-content .wrap {
+ max-width: 100%; // reset twentyseventeen default
+}
+
+
 // Inner Wrap for content area
-.site-content > .wrap {
+.site-content > .wrap, {
   max-width: 100%;
   width: 100%;
   padding: 0;
@@ -27,10 +44,6 @@ padding-bottom: 0;
 }
 
 @media screen and (min-width: 1em) {
-  .site-content {
-  margin-top: 1em;
-  }
-
   .site-content .wrap {
   padding: 0 $global-spacing;
   }
@@ -38,7 +51,11 @@ padding-bottom: 0;
 
 @media screen and (min-width: 48em) {
   .site-content .wrap {
-   padding: 0 $global-spacing-1;
+  padding: 0 $global-spacing-1;
+  }
+
+  .single-featured-image-header {
+  padding: 0 $global-spacing-1;
   }
 }
 
@@ -46,10 +63,18 @@ padding-bottom: 0;
   .site-content .wrap {
   padding: 0 $global-spacing-2;
   }
+
+  .single-featured-image-header {
+  padding: 0 $global-spacing-2;
+  }
 }
 
 @media screen and (min-width: 80em) {
   .site-content .wrap {
     padding: 0 $global-spacing-3;
+  }
+
+  .single-featured-image-header {
+  padding: 0 $global-spacing-3;
   }
 }

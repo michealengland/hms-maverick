@@ -80,3 +80,20 @@ function maverick_editor_styles() {
 		filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' )
 	);
 }
+
+
+/**
+ * Replace Default Twenty Seventeen Fonts
+ * NOTE: You must update font variables in Child SCSS
+ */
+/*
+function hms_replace_fonts() {
+  // De-register 2017 Font
+  wp_dequeue_style( 'twentyseventeen-fonts' ); // Deregister Stock 2017 Fonts
+
+  // Enque New Font
+  wp_enqueue_style( 'hms-twentyseventeen-fonts', 'https://fonts.googleapis.com/css?family=Laila:400,500,600|Source+Sans+Pro:400,400i,700,700i', array(), null );
+}
+
+add_action( 'wp_enqueue_scripts', 'hms_replace_fonts', 99 );
+*/

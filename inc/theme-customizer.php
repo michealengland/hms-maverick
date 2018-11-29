@@ -466,11 +466,12 @@ if( get_theme_mod('hms_deregister_twentyseventeen_fonts') == true ) {
  */
 if( get_theme_mod('hms_gfont_enqueue') == true ) {
   
-  add_action( 'wp_enqueue_scripts', 'enqueue_google_fonts', 99 );
+  add_action( 'wp_enqueue_scripts', 'enqueue_google_fonts' );
 
   function enqueue_google_fonts() {
     wp_enqueue_style( 'hms_google_fonts', '<link href="' . get_theme_mod('hms_gfont_enqueue') . '" rel="stylesheet"', array(), null );   // Enque New Font
   }
+
 }
 
 
@@ -614,7 +615,7 @@ if( get_theme_mod('hms_twentyseventeen_minifier') == true ) {
  */
 if( get_theme_mod('hms_replace_wp_jquery') == true ) {
   
-  add_action('init', 'replace_jquery');
+  //add_action('init', 'replace_jquery');
 
   function replace_jquery() {
     if ( !is_admin() ) {

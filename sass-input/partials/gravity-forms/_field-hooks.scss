@@ -9,12 +9,63 @@
 @import 'select';       // .ginput_container_select
 @import 'confirmation'; // .gform_confirmation_wrapper
 
+.gform_wrapper {
+    margin: 0; color: #333;
+    background-color: transparent;
+    form
+    {
+        max-width: 900px;
+        margin: 2em 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 2em;
+        background-color: $white;
+    }
+}
+
+
+
+
+
 .gform_wrapper ul.gform_fields li.gfield {
     padding-right: 0 !important;
 }
 
+// General Field Styling
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+textarea
+{
+border: 3px solid transparent;
+border-right: 0 solid transparent;
+border-bottom: 3px solid $color-2;
+border-left: 0 solid transparent;
+border-radius: 0;
+background: #eee;
+    &:focus
+    {
+    border: 3px solid $color-3;
+    background-color: $white;
+    }
+}
+
+
 // Required Field Asterik
-.entry-content .gform_wrapper .gfield_required {
+.entry-content .gform_wrapper .gfield_required
+{
     color: $color-1;
 }
 
@@ -24,23 +75,28 @@
 * Form Error Styling
 */
 // Error Submit Button
-.gform_validation_error input[type='submit'] {
+.gform_validation_error input[type='submit']
+{
     border: 3px solid $error-2;  background-color: $error-1;
-    &:hover {
+    &:hover
+    {
         background-color: $error-3;
     }
 
-    &:focus {
+    &:focus
+    {
         color: $white;  border-color: $error-3; background-color: $error-3;
     }
 }
 
 // Validation Form Error Message
-.gform_wrapper .validation_message {
+.gform_wrapper .validation_message
+{
     color: $white;
 }
 
-.gform_wrapper .validation_message, // This Field is Required Text
+.gform_wrapper .validation_message,
+// This Field is Required Text
 .gform_wrapper li.gfield_error div.ginput_complex.ginput_container label // Field Sub Labels
 {
     color: $white;
@@ -49,41 +105,49 @@
 // Form Error Styling
 
 // Notification top of Form
-// Asterisk Color
-.gform_wrapper .gfield_error .gfield_required {
-color: $error-1;
-}
-
-.gform_wrapper div.validation_error {
-color: $white; border: none;
-background-color: $error-1;
-}
-
-// Field Label Top
-.gform_wrapper .gfield_error .gfield_label {
-color: $error-1;
-}
-
-// Field Container Styling
-.gform_wrapper li.gfield.gfield_error,
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning
+.page
 {
-color: $error-1; border: none;
-background: transparent;
+    // Asterisk Color
+    .gform_wrapper .gfield_error .gfield_required
+    {
+        color: $error-1;
+    }
+
+    .gform_wrapper div.validation_error
+    {
+        color: $white; border: none;
+        background-color: $error-1;
+    }
+
+    // Field Label Top
+    .gform_wrapper .gfield_error .gfield_label
+    {
+        color: $error-1;
+    }
+
+    // Field Container Styling
+    .gform_wrapper li.gfield.gfield_error,
+    .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning
+    {
+        color: $error-1; border: none;
+        background: transparent;
+    }
+
+    // Field Styling
+    .gform_wrapper li.gfield_error input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+    .gform_wrapper li.gfield_error textarea
+    {
+        border: none;  border-bottom: 3px solid $error-1;
+    }
 }
 
-// Field Styling
-.gform_wrapper li.gfield_error input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
-.gform_wrapper li.gfield_error textarea
-{
-border: none;  border-bottom: 3px solid $error-1;
-}
 
 /*
 * Form Validated Styling
 */
 // FIELDS THAT PASS VALIDATION
-.validated {
+.validated
+{
     input[type='text'],
     input[type='email'],
     input[type='url'],
@@ -101,36 +165,34 @@ border: none;  border-bottom: 3px solid $error-1;
     input[type='color'],
     textarea
     {
-    border-color: $color-3;
+        border-color: $color-3;
     }
 } // .validated
 
 
+
+
 @media screen and (min-width: 1em) {
-    .gform_wrapper {
-    background-color: $white;
-    padding: 0;
-    max-width: 100%;
-    position: relative;
-    overflow: hidden;
+  .gform_wrapper {
+  padding: 0;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
 
-        form {
-        border: 1px solid darken($white, 5%);
-        padding: $mod-gap-1;
-        margin: 0 auto;
-        }
-
-        .gform_fields {
-        margin-left: 0; // remove gravity forms default
-        }
+    form {
+    //padding: $mod-padding-1;
+    margin: 0 auto;
+    border: 1px solid #efefef;
     }
+  }
 }
 
 
 @media screen and (min-width: 48em) {
   .gform_wrapper {
+  //padding: $mod-padding-2;
     form {
-    padding: $mod-gap-2;
+    //padding: $mod-padding-2;
     }
   }
 }
@@ -138,8 +200,10 @@ border: none;  border-bottom: 3px solid $error-1;
 
 @media screen and (min-width: 60em) {
   .gform_wrapper {
+
+  //padding: $mod-padding-3;
     form {
-    padding: $mod-gap-3;
+    //padding: $mod-padding-2;
     }
   }
 }

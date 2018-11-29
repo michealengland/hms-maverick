@@ -16,17 +16,8 @@
 
 @import "controls-alignment"; // Block Alignment Settings
 
-// HMS Blocks Plugin
-//@import "nested-template-cover-image"; // Nested Block Cover Image, Header, Paragraph
-//@import "nested-template-basic"; // WIP
-/*
-@import "innerblocks";        // Inner Blocks
-@import "innerblocks-cta";    // Nested Block Header, Content, Button
-@import "image-tile"; // WIP
-@import "offset-columns"; // WIP
-@import "toggle-block"; // WIP
-*/
-
+@import "hms-custom-post-feed"; // Inner Blocks
+@import "hms-events"; // Inner Blocks
 
 // Hide Initial Animation for JS
 .wp-block-hmsblocks-template-card-basic.animatable {
@@ -115,4 +106,17 @@ animation-play-state: paused;
 
 .has-color-7-color {
   color: $dark-gray-1;
+}
+
+
+
+.wp-block-hms-innerblocks {
+  p {
+  color: inherit;
+  }
+
+  a {
+  color: inherit;
+  @extend %basic-link-2;
+  }
 }

@@ -9,6 +9,10 @@
 
     .wp-block-column {
     margin-bottom: $mod-gap-2;
+      
+      * {
+      height: auto;
+      }
 
       // Remove Padding from default paragraph block
       > p {

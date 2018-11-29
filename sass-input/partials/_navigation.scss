@@ -1,3 +1,85 @@
+// reset default twentyseventeen
+.site-navigation-fixed.navigation-top {
+  position: relative !important;
+  bottom: 0 !important;
+  top: 0 !important;
+}
+
+// Reset Logo Styles from twentyseventeen default
+.custom-logo-link  {
+display: block;
+margin: 0 auto; // center logo
+max-width: $logo-max-width; // set logo max-width
+
+  img {
+  display: block;
+  height: auto;
+  max-height: 100%; // reset twentyseventeen default
+  width: 100%;
+  }
+}
+
+// Mobile Menu Toggle
+.js .menu-toggle {
+  @extend %menu-toggle;
+}
+
+// Nav Menus
+.nav-top {
+  // Site Title
+  .site-title a {
+    @extend %nav-links-1;
+  }
+
+  // ul
+  .menu {
+  background-color: $color-1;
+  padding: 0; // remove default twentyseventeen
+
+    li {
+    padding-bottom: 0; // remove generic padding  
+
+      a {
+      @extend %nav-links-1;
+      }
+    }
+  }
+
+
+  .current-menu-item > a,
+  .main-navigation .current_page_item > a
+  {
+  color: #f9a21a;
+  }
+}
+
+
+.nav-bottom {
+  background: $color-2;
+  width: auto;
+  max-width: auto;
+
+  li {
+    a {
+    @extend %nav-links-1;
+    }
+  }
+}
+
+
+.dropdown-toggle {
+  color: $white;
+
+  &:hover {
+    color:  $white;
+    background-color: $color-2;
+  }
+
+  &:focus {
+    color: $color-3;
+  }
+}
+
 
 @media screen and (min-width: 1em) {
 
@@ -20,7 +102,7 @@
   position: relative; // remove twentyseventeen default
 
     .wrap {
-    padding: $mod-gap-0 $global-spacing;
+    padding: 0 $global-spacing;
     margin: 0; // remove twentyseventeen defualt
     max-width: 100%; // remove twentyseveteen default
     }
@@ -28,23 +110,10 @@
 
   // Site Logo
   .main-navigation .custom-logo-link {
-  display: inline-block;
   line-height: 0;
   padding: 0;
   }
 
-
-  // Mobile Menu Toggle
-  .js .menu-toggle {
-  background-color: darken($color-1, 5%);
-  border-radius: 0;
-  color: $white;
-  margin: 0;
-
-    &:hover, &:focus {
-    outline: none;
-    }
-  }
 
   // Display Menus on Button Toggle
   .main-navigation.toggled-on {
@@ -55,6 +124,7 @@
 
   // Nav Menus
   .nav-top {
+    
     // ul
     .menu {
     background-color: $color-1;
@@ -64,42 +134,30 @@
       padding-bottom: 0; // remove generic padding  
 
         a {
-        display: inline-block; // Important for non full width border
-        color: $white;
-
-          &:hover, &:focus {
-          color: $color-2;
-          }
+        //@extend %nav-links-1;
         }
       }
     }
 
     .sub-menu {
-    background: inherit;
+    background: $sub-nav-bg-mobile;
     border: none;
-
-      li {
-        &:hover {
-        //background-color: $color-3 !important;
-        }
-      }
     }
 
     li li {
       &:hover {
-      background-color: $color-3; // overrides default twentyseventeen
+      background-color: $sub-nav-bg-mobile-hover; // overrides default twentyseventeen
+      color: $white;
       }
     }
   }
 
-  .dropdown-toggle {
-    color: $color-3;
-  }
+
 
   // submenu border arrow
   .main-navigation ul li.menu-item-has-children::after,
   .main-navigation ul li.page_item_has_children::after {
-  border-color: transparent transparent darken($color-1, 5%);
+  border-color: transparent transparent $sub-nav-bg;
   bottom: 0;
   }
 
@@ -121,27 +179,41 @@
 
 @media screen and (min-width: 48em) {
 
+  .navigation-top nav {
+  margin-left: 0;
+  }
+
   .site-title {
     font-size: 1.4em;
   
       a {
-      
       display: inline-block;
       padding: 0;
       }
     }
 
   .navigation-top .wrap {
-  padding: $mod-gap-0 $global-spacing-1;
+  padding: 0 $global-spacing-1;
+  position: relative !important; // remove twentyseventeen default
   }
 
   .nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+    .menu li a {
+    font-size: 1.2em;
+    }
   
     .menu-primary-menu-container {
     display: inline-block;
-    width: calc(100% - 70px); // Offset for Logo
+    display: flex;
+    justify-content: center;
 
       .menu {
+      display: inline-block;
 
         li {
 
@@ -153,7 +225,7 @@
     } // .menu-primary-menu-container
 
     .sub-menu {
-    background-color: darken($color-1, 5%);
+    background-color: $sub-nav-bg;
     }
 
     li li {
@@ -165,27 +237,45 @@
 
   // Logo
   .main-navigation .custom-logo-link {
+  margin: 0;
   padding: 0;
-  width: 60px;
-  }
-}
-
-@media screen and (min-width: 60em) {
-  .navigation-top .wrap {
-  padding: $mod-gap-0 $global-spacing-2;
   }
 
-  // Makes link alignment flush with site title.
-  .navigation-top {
-    nav {
-    margin-left: -1.25em;
+  .nav-bottom {
+  padding: 0 $global-spacing-1;
+    li{
+    padding: 0;
+       a {
+      padding: .5em 1em;
+      }
     }
   }
 
+  
+}
+
+@media screen and (min-width: 60em) {
+
+  .nav-bottom {
+  padding: 0 $global-spacing-2;
+  }
+
+  .navigation-top .wrap {
+  padding: 0 $global-spacing-2;
+  position: relative; // remove twentyseventeen default
+  }
 }
 
 @media screen and (min-width: 80em) {
+  .nav-top {
+  justify-content: space-between;
+  }
+
+  .nav-bottom {
+  padding: 0 $global-spacing-3;
+  }
+
   .navigation-top .wrap {
-  padding: $mod-gap-0 $global-spacing-3;
+  padding: 0 $global-spacing-3;
   }
 }

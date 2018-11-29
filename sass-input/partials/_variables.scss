@@ -1,6 +1,5 @@
-$font-family-1: Arial, Helvetica, sans-serif;
-
 $font-family-1: 'Muli', sans-serif;
+$font-family-2: $font-family-1;
 
 // Font Weights
 $light: 300;
@@ -28,9 +27,7 @@ $error-1: #e54646; // Bright Red
 $error-2: #cc3f3f; // Darker Red
 $error-3: #ab3333; // Darkest Red
 
-
 $default-opacity: .5;
-
 
 // Gradients
 $linear-gradient-1: linear-gradient(180deg, rgba($black, 0) 40%, rgba( $black, 0.6) 100%);
@@ -41,23 +38,33 @@ $linear-gradient-panel-img: linear-gradient(180deg, rgba(0, 0, 0, .3) 20%, rgba(
 $site_bg: $white;
 $site_header_bg: $color-1;
 
-// Footer
-$site_footer_bg: $color-1; // Outer Container
-$site_widget_area_bg: $color-1; // widget_area
-$site_footer_credits_bg: $color-1; // Footer Credits @footer-info.php
+$featured-image-header-bg: $color-2;
 
-// link Color Settings
+// Footer
+$site_footer_bg: $color-2; // Outer Container
+$site_widget_area_bg: transparent; // widget_area
+$site_footer_credits_bg: transparent; // Footer Credits @footer-info.php
+
+$heading-color-1: $color-2;
+$heading-color-2: $color-1;
+$text-color-1: $dark-gray-1;
+
+$logo-max-width: 200px;
+
+// Links for use on dark backgrounds
 $light-link: $white;
 $light-link-hover: $color-2;
 $light-link-focus: $color-2;
 $light-link-active: $color-3;
 
-// link Color Settings
-$dark-link: $color-1;
+// Link for use on light backgrounds
+$dark-link: $color-5;
 $dark-link-hover: $color-2;
 $dark-link-focus: $color-2;
 $dark-link-active: $color-3;
 
+// Menu Toggle Mobile
+$menu-toggle-bg: darken($color-1, 30%);
 
 // Main Nav Link Colors
 $main-nav-link: $light-link;
@@ -65,7 +72,9 @@ $main-nav-link-hover: $light-link-hover;
 $main-nav-link-focus: $light-link-focus;
 $main-nav-link-active: $light-link-active;
 // Sub Navigation Links
-$sub-nav-bg: $white;
+$sub-nav-bg-mobile: $color-1;
+$sub-nav-bg-mobile-hover: darken($color-1, 15%);
+$sub-nav-bg: darken($color-1, 15%);
 $sub-nav-link-bg: $color-3;
 $sub-nav-link: $dark-link;
 $sub-nav-link-hover: $dark-link-hover;
@@ -87,18 +96,16 @@ $mod-gap-2: 2em;
 $mod-gap-3: 3em;
 
 // This spacing is very important to the site layout.
-$global-spacing: .5rem;
+$global-spacing: 1rem;
 $global-spacing-1: 1.5rem;
-$global-spacing-2: 3rem;
-$global-spacing-3: 8rem;
-
-
+$global-spacing-2: 6rem;
+$global-spacing-3: 20rem;
 
 // Footer Widget Settings
 $widget-footer-title-0: 1.2em;
-$widget-footer-title-1: 1.3em;
-$widget-footer-title-2: 1.4em;
-$widget-footer-title-color: $color-3;
+$widget-footer-title-1: 1.6em;
+$widget-footer-title-2: 1.8em;
+$widget-footer-title-color: $white;
 
 $widget-footer-link: $light-link;
 $widget-footer-link-hover: $color-4;

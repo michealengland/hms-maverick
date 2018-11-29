@@ -1,5 +1,7 @@
 /inc/site/site-functions.php
 /inc/site/site-modules.php
+node_modules
+package-lock.json
 style.map
 
 # You want to have .DS_Store and other environment files/packages in your .gitignore_global configuration.

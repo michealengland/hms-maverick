@@ -43,21 +43,32 @@
 
 		</div>
 
-		<?php if ( has_nav_menu( 'social-header' ) ) : ?>
-			<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Header Social Links Menu', 'twentyseventeen' ); ?>">
-				<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'social-header',
-							'menu_class'     => 'social-links-menu',
-							'container'			 => 'ul',
-							'depth'          => 1,
-							'link_before'    => '<span class="screen-reader-text">',
-							'link_after'     => '</span>' . twentyseventeen_get_svg( array( 'icon' => 'chain' ) ),
-						)
-					);
-				?>
-			</nav>
-		<?php endif; ?>
+		<div class="nav-bottom alignfull">
+			<?php if ( has_nav_menu( 'secondary-menu' ) ) : ?>
+				<?php wp_nav_menu( array(
+					'theme_location' => 'secondary-menu',
+					'menu_id'        => 'secondary-menu',
+					'container'			 => 'nav',
+					'depth'          => 1,
+				) ); ?>
+			<?php endif; ?>
+
+			<?php if ( has_nav_menu( 'social-header' ) ) : ?>
+				<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Header Social Links Menu', 'twentyseventeen' ); ?>">
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'social-header',
+								'menu_class'     => 'social-links-menu',
+								'container'			 => 'ul',
+								'depth'          => 1,
+								'link_before'    => '<span class="screen-reader-text">',
+								'link_after'     => '</span>' . twentyseventeen_get_svg( array( 'icon' => 'chain' ) ),
+							)
+						);
+					?>
+				</nav>
+			<?php endif; ?>
+		</div>
 	</div>
 </div><!-- #site-navigation -->

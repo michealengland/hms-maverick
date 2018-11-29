@@ -1,0 +1,44 @@
+// ul
+.wp-block-latest-posts.hms-custom-post-feed {
+    
+    // List Layout
+    &:not( .is-grid ) {
+    margin-left: 0;
+
+        li {
+        display: block;
+    
+            img {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            margin-right: 6px;
+            }
+
+        }
+    }
+
+    // Grid Layout
+    &.is-grid {
+    margin-left: 0;
+        li {
+        display: flex;
+        flex: 0 1 auto;
+        align-items: center;
+        justify-content: stretch;
+        background-color: $white;
+        flex-direction: column;
+        margin:0;
+        padding: $mod-gap-0;
+
+            a {
+            @extend %form-field-color-scheme;
+            }
+
+            img {
+            display: block;
+            width: 100%;
+            }
+        }
+    }
+}

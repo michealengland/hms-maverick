@@ -27,10 +27,10 @@
   }
 
   .alignfull {
-  margin-left: -$mod-gap-0;
-  margin-right: -$mod-gap-0;
-  width: auto;
-  max-width: inherit;
+  margin-left: -$mod-gap-0 !important;
+  margin-right: -$mod-gap-0 !important;
+  width: auto !important;
+  max-width: inherit !important;
   }
 
   .has-center-content  {
@@ -59,9 +59,9 @@
   }
 
   .alignfull {
-  margin-left: -$global-spacing-1;
-  margin-right: -$global-spacing-1;
-  width: auto;
+  margin-left: -$global-spacing-1 !important;
+  margin-right: -$global-spacing-1 !important;
+  width: auto  !important;
   }
 }
 
@@ -73,8 +73,8 @@
   }
 
   .alignfull {
-  margin-left: -$global-spacing-2;
-  margin-right: -$global-spacing-2;
+  margin-left: -$global-spacing-2 !important;
+  margin-right: -$global-spacing-2 !important;
   }
 }
 
@@ -85,7 +85,7 @@
   }
 
   .alignfull {
-  margin-left: -$global-spacing-3;
-  margin-right: -$global-spacing-3;
+  margin-left: -$global-spacing-3 !important;
+  margin-right: -$global-spacing-3 !important;
   }
 }

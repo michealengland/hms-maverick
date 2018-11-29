@@ -1,6 +1,7 @@
 // Post Thumbnail 
 .post-thumbnail {
   a {
+  display: inline-block;
   @extend %post-thumbnail-link;
   }
 }
@@ -16,6 +17,12 @@
   top: 0;
   left: 0;
   width: 1.5em;
+}
+
+// Center Blog Articles in Feed
+.blog:not(.has-sidebar) #primary article {
+  float: none;
+  margin: 0 auto;
 }
 
 .entry-title {
@@ -74,6 +81,14 @@
   .icon.icon-thumb-tack {
   position: absolute;
   left: -1em;
+  }
+
+  // Blog Archive Page Header
+  .blog .site-content .wrap .page-header {
+  width: 100%;
+  float: none;
+  display: block;
+  position: relative;
   }
 }
 

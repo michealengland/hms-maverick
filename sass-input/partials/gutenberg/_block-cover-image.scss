@@ -1,12 +1,17 @@
+.wp-block-cover-image.wp-block-hms-cover-img {
+  @extend %gutenberg-overlay-pallette;
+}
+
 @media screen and (min-width: 1em) {
 
-  .wp-block-cover-image, {
+  .wp-block-cover-image {
   align-items: center;
   color: $white;
   display: flex;
   flex-direction: column;
   height: 1px; // Fixes vertical centering in IE11
   height: 100%;
+  margin: auto;
   max-height: 100%;
   justify-content: center !important;
   margin-bottom: $mod-gap-1;
@@ -18,6 +23,7 @@
     z-index: 2;
     }
 
+    /*
     h1, h2, h3, h4, h5, h6 {
     font-weight: $thick;
     max-width: 100%;
@@ -25,6 +31,7 @@
     margin-bottom: 0;
     text-align: inherit;
     }
+    */
 
     // Override default Gutenberg block styles heading
     h2 {
@@ -41,6 +48,7 @@
     }
 
     p {
+    color: inherit;
     line-height: 1.6em;
     font-weight: $thick;
     width: 100%;
@@ -62,11 +70,6 @@
     margin-left: auto !important;
     margin-right: auto !important;
     }
-
-    &.wp-block-hms-cover-img {
-      @extend %gutenberg-overlay-pallette;
-    }
-
 
     // Fixes nested flex blocks in IE11
     .wp-block-hms-innerblocks-cta {
