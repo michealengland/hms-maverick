@@ -7,16 +7,9 @@
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles', 1 );
 
 function my_theme_enqueue_styles() {
-
-  if( get_theme_mod('hms_twentyseventeen_minifier') == true ) {
-    // serve manually minified style.css
-    wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/parent-min/style.min.css', array(), null, 'all' );
-  } else {
-    // serve normal parent-style
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', array(), null, 'all' );
-  }
-  wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_directory_uri() . '/style.css', array(), null, 'all' );
-
+  // serve normal parent-style
+  wp_enqueue_style( 'twentyseventeen', get_template_directory_uri() . '/style.css', array(), null, 'all' );
+  wp_enqueue_style( 'hms-maverick', get_stylesheet_directory_uri() . '/style.css', array(), null, 'all' );
 }
 
 /**
@@ -76,7 +69,7 @@ function maverick_editor_styles() {
 	wp_enqueue_style(
 		'maverick-block-editor-styles',
 		get_stylesheet_directory_uri() . '/editor.css',
-		array( 'wp-blocks' ),
+		array(),
 		filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' )
 	);
 }

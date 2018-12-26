@@ -6,6 +6,11 @@ This child theme is used to create websites that are tailored to the client. The
 
 ## Recent Updates
 
+# 0.1.1
+- Removed experimental theme customizer features.
+- Refactored enqueue for window animation.
+- Removed parent-min tree.
+
 # 0.1.0
 - Updated core styling components.
 - Refactored styling.

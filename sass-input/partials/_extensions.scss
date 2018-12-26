@@ -234,38 +234,38 @@ background: darken($white, 3%);
 
         &.has-color-1-overlay-color.has-background-dim-#{ $i * 10 }{
           &::before {
-          background-color: rgba( darken( $color-1, 5%), $i * 0.1  ) !important;
+          background-color: rgba( $color-1, $i * 0.1  ) !important;
           }
         }
     
         &.has-color-2-overlay-color.has-background-dim-#{ $i * 10 } {
           &::before {
-          background-color: rgba( darken( $color-2, 5%), $i * 0.1  )!important;
+          background-color: rgba( $color-2, $i * 0.1  )!important;
           }
         }
     
         &.has-color-3-overlay-color.has-background-dim-#{ $i * 10 } {
           &::before {
-          background-color: rgba( darken( $color-3, 20%), $i * 0.1  )!important;
+          background-color: rgba( $color-3, $i * 0.1  )!important;
           }
         }
     
         &.has-color-4-overlay-color.has-background-dim-#{ $i * 10 } {
           &::before {
-          background-color: rgba( darken( $color-4, 15%), $i * 0.1  );
+          background-color: rgba( $color-4, 15%), $i * 0.1  );
           }
         }
     
         &.has-color-5-overlay-color.has-background-dim-#{ $i * 10 }::before {
-          background-color: rgba( darken( $color-5, 15%), $i * 0.1  );
+          background-color: rgba( $color-5, 15%), $i * 0.1  );
         }
     
         &.has-color-6-overlay-color.has-background-dim-#{ $i * 10 }::before {
-          background-color: rgba( darken( $color-6, 15%), $i * 0.1  );
+          background-color: rgba( $color-6, 15%), $i * 0.1  );
         }
     
         &.has-color-7-overlay-color.has-background-dim-#{ $i * 10 }::before {
-          background-color: rgba( $dark-gray-1, $i * 0.1  );
+          background-color: rgba( $color-7, $i * 0.1  );
         }
     
         &.has-white-overlay-color.has-background-dim-#{ $i * 10 } {

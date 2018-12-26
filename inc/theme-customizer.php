@@ -424,9 +424,6 @@ function hms_mav_customize_register( $wp_customize ) {
 
 add_action( 'customize_register', 'hms_mav_customize_register' );
 
-
-
-
 /**
  * Disable the emoji's - Functionality Provided by
  */
@@ -458,7 +455,6 @@ if( get_theme_mod('hms_deregister_twentyseventeen_fonts') == true ) {
   }
 }
 
-
 /**
  * Enqueue Google Font
  * NOTE: You must update font styles in Child SCSS
@@ -474,7 +470,6 @@ if( get_theme_mod('hms_gfont_enqueue') == true ) {
 
 }
 
-
 /**
  * Enqueue Font Awesome
  */
@@ -486,29 +481,27 @@ if( get_theme_mod('hms_enqueue_fa') == true ) {
   }
 }
 
+
+
 /**
 * Register Window Animation JS - Scrolling Animation Effect
-* Upgrade Jquery to 2.2.4 which does not throw errors.
 */
 if( get_theme_mod('hms_enqueue_scroll_animation') == true ) {
 
   add_action( 'wp_enqueue_scripts', 'enqueue_window_animation' );
 
   function enqueue_window_animation() {
-    wp_register_script( 'window_animation_jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', array(), null );
-		wp_enqueue_script( 'window_animation_jquery' );
-
-    // enqueue file
-		wp_register_script( 'window_animation', get_stylesheet_directory_uri() . '/inc/js/window-animation-min.js', array(), null );
-		wp_enqueue_script( 'window_animation' );
+    
+    // Register Script for later use.
+    wp_register_script( 'hms_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), '3.3.1', true );
+    // Enqueue Window Animation in Header jQuery 3.3.1 is present.
+		wp_enqueue_script( 'window_animation', get_stylesheet_directory_uri() . '/inc/js/window-animation.min.js', array('hms_jquery'), '3.3.1', true );
   }
 
 }
 
-
-
 /**
- * Filter Defualt Excerpt Length
+ * Filter Default Excerpt Length
  *
  * @param int $length Excerpt length.
  * @return int (Maybe) modified excerpt length.

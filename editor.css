@@ -1,459 +1,459 @@
-.gutenberg .has-color-1-overlay-color.has-background-dim-10.wp-block-cover-image::before {
-  background-color: rgba(1, 49, 61, 0.1) !important;
+.has-color-1-overlay-color.has-background-dim-10.wp-block-cover-image::before {
+  background-color: rgba(1, 70, 86, 0.1) !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-10.wp-block-cover-image::before {
-  background-color: rgba(0, 134, 144, 0.1) !important;
+.has-color-2-overlay-color.has-background-dim-10.wp-block-cover-image::before {
+  background-color: rgba(0, 158, 169, 0.1) !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-10.wp-block-cover-image::before {
-  background-color: rgba(206, 199, 185, 0.1) !important;
+.has-color-3-overlay-color.has-background-dim-10.wp-block-cover-image::before {
+  background-color: rgba(248, 247, 245, 0.1) !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-10.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-10.wp-block-cover-image::before {
   background-color: rgba(248, 200, 12, 0.1);
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-10.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-10.wp-block-cover-image::before {
   background-color: rgba(172, 115, 1, 0.1);
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-10.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-10.wp-block-cover-image::before {
   background-color: rgba(145, 134, 122, 0.1);
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-10.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-10.wp-block-cover-image::before {
   background-color: rgba(34, 34, 34, 0.1);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-10.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-10.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-10.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-10.wp-block-cover-image::before {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-10.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-10.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-10.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-10.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-10.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-10.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
 
-.gutenberg .has-color-1-overlay-color.has-background-dim-20.wp-block-cover-image::before {
-  background-color: rgba(1, 49, 61, 0.2) !important;
+.has-color-1-overlay-color.has-background-dim-20.wp-block-cover-image::before {
+  background-color: rgba(1, 70, 86, 0.2) !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-20.wp-block-cover-image::before {
-  background-color: rgba(0, 134, 144, 0.2) !important;
+.has-color-2-overlay-color.has-background-dim-20.wp-block-cover-image::before {
+  background-color: rgba(0, 158, 169, 0.2) !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-20.wp-block-cover-image::before {
-  background-color: rgba(206, 199, 185, 0.2) !important;
+.has-color-3-overlay-color.has-background-dim-20.wp-block-cover-image::before {
+  background-color: rgba(248, 247, 245, 0.2) !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-20.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-20.wp-block-cover-image::before {
   background-color: rgba(248, 200, 12, 0.2);
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-20.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-20.wp-block-cover-image::before {
   background-color: rgba(172, 115, 1, 0.2);
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-20.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-20.wp-block-cover-image::before {
   background-color: rgba(145, 134, 122, 0.2);
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-20.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-20.wp-block-cover-image::before {
   background-color: rgba(34, 34, 34, 0.2);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-20.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-20.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-20.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-20.wp-block-cover-image::before {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-20.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-20.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-20.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-20.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-20.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-20.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
 
-.gutenberg .has-color-1-overlay-color.has-background-dim-30.wp-block-cover-image::before {
-  background-color: rgba(1, 49, 61, 0.3) !important;
+.has-color-1-overlay-color.has-background-dim-30.wp-block-cover-image::before {
+  background-color: rgba(1, 70, 86, 0.3) !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-30.wp-block-cover-image::before {
-  background-color: rgba(0, 134, 144, 0.3) !important;
+.has-color-2-overlay-color.has-background-dim-30.wp-block-cover-image::before {
+  background-color: rgba(0, 158, 169, 0.3) !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-30.wp-block-cover-image::before {
-  background-color: rgba(206, 199, 185, 0.3) !important;
+.has-color-3-overlay-color.has-background-dim-30.wp-block-cover-image::before {
+  background-color: rgba(248, 247, 245, 0.3) !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-30.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-30.wp-block-cover-image::before {
   background-color: rgba(248, 200, 12, 0.3);
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-30.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-30.wp-block-cover-image::before {
   background-color: rgba(172, 115, 1, 0.3);
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-30.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-30.wp-block-cover-image::before {
   background-color: rgba(145, 134, 122, 0.3);
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-30.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-30.wp-block-cover-image::before {
   background-color: rgba(34, 34, 34, 0.3);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-30.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-30.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-30.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-30.wp-block-cover-image::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-30.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-30.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-30.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-30.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-30.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-30.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
 
-.gutenberg .has-color-1-overlay-color.has-background-dim-40.wp-block-cover-image::before {
-  background-color: rgba(1, 49, 61, 0.4) !important;
+.has-color-1-overlay-color.has-background-dim-40.wp-block-cover-image::before {
+  background-color: rgba(1, 70, 86, 0.4) !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-40.wp-block-cover-image::before {
-  background-color: rgba(0, 134, 144, 0.4) !important;
+.has-color-2-overlay-color.has-background-dim-40.wp-block-cover-image::before {
+  background-color: rgba(0, 158, 169, 0.4) !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-40.wp-block-cover-image::before {
-  background-color: rgba(206, 199, 185, 0.4) !important;
+.has-color-3-overlay-color.has-background-dim-40.wp-block-cover-image::before {
+  background-color: rgba(248, 247, 245, 0.4) !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-40.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-40.wp-block-cover-image::before {
   background-color: rgba(248, 200, 12, 0.4);
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-40.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-40.wp-block-cover-image::before {
   background-color: rgba(172, 115, 1, 0.4);
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-40.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-40.wp-block-cover-image::before {
   background-color: rgba(145, 134, 122, 0.4);
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-40.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-40.wp-block-cover-image::before {
   background-color: rgba(34, 34, 34, 0.4);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-40.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-40.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-40.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-40.wp-block-cover-image::before {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-40.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-40.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-40.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-40.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-40.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-40.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
 
-.gutenberg .has-color-1-overlay-color.has-background-dim-50.wp-block-cover-image::before {
-  background-color: rgba(1, 49, 61, 0.5) !important;
+.has-color-1-overlay-color.has-background-dim-50.wp-block-cover-image::before {
+  background-color: rgba(1, 70, 86, 0.5) !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-50.wp-block-cover-image::before {
-  background-color: rgba(0, 134, 144, 0.5) !important;
+.has-color-2-overlay-color.has-background-dim-50.wp-block-cover-image::before {
+  background-color: rgba(0, 158, 169, 0.5) !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-50.wp-block-cover-image::before {
-  background-color: rgba(206, 199, 185, 0.5) !important;
+.has-color-3-overlay-color.has-background-dim-50.wp-block-cover-image::before {
+  background-color: rgba(248, 247, 245, 0.5) !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-50.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-50.wp-block-cover-image::before {
   background-color: rgba(248, 200, 12, 0.5);
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-50.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-50.wp-block-cover-image::before {
   background-color: rgba(172, 115, 1, 0.5);
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-50.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-50.wp-block-cover-image::before {
   background-color: rgba(145, 134, 122, 0.5);
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-50.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-50.wp-block-cover-image::before {
   background-color: rgba(34, 34, 34, 0.5);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-50.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-50.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-50.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-50.wp-block-cover-image::before {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-50.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-50.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-50.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-50.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-50.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-50.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
 
-.gutenberg .has-color-1-overlay-color.has-background-dim-60.wp-block-cover-image::before {
-  background-color: rgba(1, 49, 61, 0.6) !important;
+.has-color-1-overlay-color.has-background-dim-60.wp-block-cover-image::before {
+  background-color: rgba(1, 70, 86, 0.6) !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-60.wp-block-cover-image::before {
-  background-color: rgba(0, 134, 144, 0.6) !important;
+.has-color-2-overlay-color.has-background-dim-60.wp-block-cover-image::before {
+  background-color: rgba(0, 158, 169, 0.6) !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-60.wp-block-cover-image::before {
-  background-color: rgba(206, 199, 185, 0.6) !important;
+.has-color-3-overlay-color.has-background-dim-60.wp-block-cover-image::before {
+  background-color: rgba(248, 247, 245, 0.6) !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-60.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-60.wp-block-cover-image::before {
   background-color: rgba(248, 200, 12, 0.6);
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-60.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-60.wp-block-cover-image::before {
   background-color: rgba(172, 115, 1, 0.6);
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-60.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-60.wp-block-cover-image::before {
   background-color: rgba(145, 134, 122, 0.6);
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-60.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-60.wp-block-cover-image::before {
   background-color: rgba(34, 34, 34, 0.6);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-60.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-60.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-60.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-60.wp-block-cover-image::before {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-60.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-60.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-60.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-60.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-60.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-60.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
 
-.gutenberg .has-color-1-overlay-color.has-background-dim-70.wp-block-cover-image::before {
-  background-color: rgba(1, 49, 61, 0.7) !important;
+.has-color-1-overlay-color.has-background-dim-70.wp-block-cover-image::before {
+  background-color: rgba(1, 70, 86, 0.7) !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-70.wp-block-cover-image::before {
-  background-color: rgba(0, 134, 144, 0.7) !important;
+.has-color-2-overlay-color.has-background-dim-70.wp-block-cover-image::before {
+  background-color: rgba(0, 158, 169, 0.7) !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-70.wp-block-cover-image::before {
-  background-color: rgba(206, 199, 185, 0.7) !important;
+.has-color-3-overlay-color.has-background-dim-70.wp-block-cover-image::before {
+  background-color: rgba(248, 247, 245, 0.7) !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-70.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-70.wp-block-cover-image::before {
   background-color: rgba(248, 200, 12, 0.7);
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-70.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-70.wp-block-cover-image::before {
   background-color: rgba(172, 115, 1, 0.7);
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-70.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-70.wp-block-cover-image::before {
   background-color: rgba(145, 134, 122, 0.7);
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-70.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-70.wp-block-cover-image::before {
   background-color: rgba(34, 34, 34, 0.7);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-70.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-70.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-70.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-70.wp-block-cover-image::before {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-70.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-70.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-70.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-70.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-70.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-70.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
 
-.gutenberg .has-color-1-overlay-color.has-background-dim-80.wp-block-cover-image::before {
-  background-color: rgba(1, 49, 61, 0.8) !important;
+.has-color-1-overlay-color.has-background-dim-80.wp-block-cover-image::before {
+  background-color: rgba(1, 70, 86, 0.8) !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-80.wp-block-cover-image::before {
-  background-color: rgba(0, 134, 144, 0.8) !important;
+.has-color-2-overlay-color.has-background-dim-80.wp-block-cover-image::before {
+  background-color: rgba(0, 158, 169, 0.8) !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-80.wp-block-cover-image::before {
-  background-color: rgba(206, 199, 185, 0.8) !important;
+.has-color-3-overlay-color.has-background-dim-80.wp-block-cover-image::before {
+  background-color: rgba(248, 247, 245, 0.8) !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-80.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-80.wp-block-cover-image::before {
   background-color: rgba(248, 200, 12, 0.8);
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-80.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-80.wp-block-cover-image::before {
   background-color: rgba(172, 115, 1, 0.8);
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-80.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-80.wp-block-cover-image::before {
   background-color: rgba(145, 134, 122, 0.8);
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-80.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-80.wp-block-cover-image::before {
   background-color: rgba(34, 34, 34, 0.8);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-80.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-80.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-80.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-80.wp-block-cover-image::before {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-80.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-80.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-80.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-80.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-80.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-80.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
 
-.gutenberg .has-color-1-overlay-color.has-background-dim-90.wp-block-cover-image::before {
-  background-color: rgba(1, 49, 61, 0.9) !important;
+.has-color-1-overlay-color.has-background-dim-90.wp-block-cover-image::before {
+  background-color: rgba(1, 70, 86, 0.9) !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-90.wp-block-cover-image::before {
-  background-color: rgba(0, 134, 144, 0.9) !important;
+.has-color-2-overlay-color.has-background-dim-90.wp-block-cover-image::before {
+  background-color: rgba(0, 158, 169, 0.9) !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-90.wp-block-cover-image::before {
-  background-color: rgba(206, 199, 185, 0.9) !important;
+.has-color-3-overlay-color.has-background-dim-90.wp-block-cover-image::before {
+  background-color: rgba(248, 247, 245, 0.9) !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-90.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-90.wp-block-cover-image::before {
   background-color: rgba(248, 200, 12, 0.9);
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-90.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-90.wp-block-cover-image::before {
   background-color: rgba(172, 115, 1, 0.9);
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-90.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-90.wp-block-cover-image::before {
   background-color: rgba(145, 134, 122, 0.9);
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-90.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-90.wp-block-cover-image::before {
   background-color: rgba(34, 34, 34, 0.9);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-90.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-90.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-90.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-90.wp-block-cover-image::before {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-90.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-90.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-90.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-90.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-90.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-90.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
 
-.gutenberg .has-color-1-overlay-color.has-background-dim-100.wp-block-cover-image::before {
-  background-color: #01313d !important;
+.has-color-1-overlay-color.has-background-dim-100.wp-block-cover-image::before {
+  background-color: #014656 !important;
 }
 
-.gutenberg .has-color-2-overlay-color.has-background-dim-100.wp-block-cover-image::before {
-  background-color: #008690 !important;
+.has-color-2-overlay-color.has-background-dim-100.wp-block-cover-image::before {
+  background-color: #009ea9 !important;
 }
 
-.gutenberg .has-color-3-overlay-color.has-background-dim-100.wp-block-cover-image::before {
-  background-color: #cec7b9 !important;
+.has-color-3-overlay-color.has-background-dim-100.wp-block-cover-image::before {
+  background-color: #f8f7f5 !important;
 }
 
-.gutenberg .has-color-4-overlay-color.has-background-dim-100.wp-block-cover-image::before {
+.has-color-4-overlay-color.has-background-dim-100.wp-block-cover-image::before {
   background-color: #f8c80c;
 }
 
-.gutenberg .has-color-5-overlay-color.has-background-dim-100.wp-block-cover-image::before {
+.has-color-5-overlay-color.has-background-dim-100.wp-block-cover-image::before {
   background-color: #ac7301;
 }
 
-.gutenberg .has-color-6-overlay-color.has-background-dim-100.wp-block-cover-image::before {
+.has-color-6-overlay-color.has-background-dim-100.wp-block-cover-image::before {
   background-color: #91867a;
 }
 
-.gutenberg .has-color-7-overlay-color.has-background-dim-100.wp-block-cover-image::before {
+.has-color-7-overlay-color.has-background-dim-100.wp-block-cover-image::before {
   background-color: #222222;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-100.wp-block-cover-image {
+.has-white-overlay-color.has-background-dim-100.wp-block-cover-image {
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-100.wp-block-cover-image::before {
+.has-white-overlay-color.has-background-dim-100.wp-block-cover-image::before {
   background-color: white;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-100.wp-block-cover-image a {
+.has-white-overlay-color.has-background-dim-100.wp-block-cover-image a {
   box-shadow: 0 1px 0 0 #014656;
   color: #014656;
 }
 
-.gutenberg .has-white-overlay-color.has-background-dim-100.wp-block-cover-image a:hover, .gutenberg .has-white-overlay-color.has-background-dim-100.wp-block-cover-image a:focus {
+.has-white-overlay-color.has-background-dim-100.wp-block-cover-image a:hover, .has-white-overlay-color.has-background-dim-100.wp-block-cover-image a:focus {
   box-shadow: 0 3px 0 0 #009EA9;
   color: #009EA9;
 }
