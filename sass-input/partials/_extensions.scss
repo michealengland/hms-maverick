@@ -252,16 +252,16 @@ background: darken($white, 3%);
     
         &.has-color-4-overlay-color.has-background-dim-#{ $i * 10 } {
           &::before {
-          background-color: rgba( $color-4, 15%), $i * 0.1  );
+          background-color: rgba( $color-4, $i * 0.1  );
           }
         }
     
         &.has-color-5-overlay-color.has-background-dim-#{ $i * 10 }::before {
-          background-color: rgba( $color-5, 15%), $i * 0.1  );
+          background-color: rgba( $color-5, $i * 0.1  );
         }
     
         &.has-color-6-overlay-color.has-background-dim-#{ $i * 10 }::before {
-          background-color: rgba( $color-6, 15%), $i * 0.1  );
+          background-color: rgba( $color-6, $i * 0.1  );
         }
     
         &.has-color-7-overlay-color.has-background-dim-#{ $i * 10 }::before {

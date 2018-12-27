@@ -14,64 +14,20 @@
 @import "block-table";        // .wp-block-table
 @import "block-verse";        // .wp-block-verse
 
+// Block Controls
 @import "controls-alignment"; // Block Alignment Settings
 
-@import "hms-custom-post-feed"; // Inner Blocks
-@import "hms-events"; // Inner Blocks
 
-// Hide Initial Animation for JS
-.wp-block-hmsblocks-template-card-basic.animatable {
-visibility: hidden;
--webkit-animation-play-state: paused;
-animation-play-state: paused;
-}
+// HMS Blocks Plugin style overrides
+@import "hms-innerblocks";        // Inner Blocks
+@import "hms-custom-post-feed";   // Custom Post Feed
+@import "hms-toggle-block";       // Toggle Block
 
-// Card Opacity & Transform
-.wp-block-hmsblocks-template-card-basic.animatable  {
-  animation-name: card-fade-in;
-  visibility: visible;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-.has-color-1-background-color {
-  background-color: $color-1;
-}
-
-.has-color-2-background-color {
-  background-color: $color-2;
-}
-
-.has-color-3-background-color {
-  background-color: $color-3;
-}
-
-.has-color-4-background-color {
-  background-color: $color-4;
-}
-
-.has-color-5-background-color {
-  background-color: $color-5;
-}
-
-.has-color-6-background-color {
-  background-color: $color-6;
-}
-
-.has-color-7-background-color {
-  background-color: $dark-gray-1;
-}
+// HMS Events Block style overrides
+@import "hms-events";             // HMS Events
 
 
-.has-white-background-color {
-  background-color: $white;
-}
-
-
+// Set block color
 .has-color-1-color {
   color: $color-1;
 }
@@ -100,23 +56,44 @@ animation-play-state: paused;
   color: $color-6;
 }
 
+.has-color-7-color {
+  color: $color-7;
+}
+
 .has-white-color {
   color: $white;
 }
 
-.has-color-7-color {
-  color: $dark-gray-1;
+
+// Set block background
+.has-color-1-background-color {
+  background-color: $color-1;
 }
 
+.has-color-2-background-color {
+  background-color: $color-2;
+}
 
+.has-color-3-background-color {
+  background-color: $color-3;
+}
 
-.wp-block-hms-innerblocks {
-  p {
-  color: inherit;
-  }
+.has-color-4-background-color {
+  background-color: $color-4;
+}
 
-  a {
-  color: inherit;
-  @extend %basic-link-2;
-  }
+.has-color-5-background-color {
+  background-color: $color-5;
+}
+
+.has-color-6-background-color {
+  background-color: $color-6;
+}
+
+.has-color-7-background-color {
+  background-color: $color-7;
+}
+
+.has-white-background-color {
+  background-color: $white;
 }

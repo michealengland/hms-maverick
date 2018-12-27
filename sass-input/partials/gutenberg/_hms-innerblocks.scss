@@ -1,0 +1,46 @@
+.wp-block-hms-innerblocks,
+.wp-block-hms-innerblocks-cta {
+padding: $mod-gap-0;
+margin: 0 0 1.5em 0;
+
+    p {
+    color: inherit;
+    }
+      
+    a {
+    color: inherit;
+    @extend %basic-link-2;
+    }
+
+    // R
+    p:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+    }
+
+    &:last-child {
+    margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .wp-block-hms-innerblocks,
+    .wp-block-hms-innerblocks-cta {
+    padding: $mod-gap-1;
+    }
+}
+
+
+@media screen and (min-width: 60em) {
+    .wp-block-hms-innerblocks,
+    .wp-block-hms-innerblocks-cta {
+    padding: $mod-gap-2;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .wp-block-hms-innerblocks,
+    .wp-block-hms-innerblocks-cta {
+    padding: $mod-gap-3;
+    }
+}

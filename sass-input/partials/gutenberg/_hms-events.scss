@@ -1,25 +1,10 @@
-.event-item {
-
-}
-
 .is-grid {
 
     article.event-item {
     margin-bottom: $mod-gap-1;
-
-        img {}
 
         .event-content {
         padding: $mod-gap-0;
         }
     }  
 } 
-
-// Event Details Used in Singular / Archive Pages
-
-
-.archive .event-meta {
-}
-
-.single .event-meta {
-}

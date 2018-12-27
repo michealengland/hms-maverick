@@ -1,14 +1,5 @@
 @media screen and (min-width: 1em) {
 
-// Fixes issue on cover image caused by twentyseventeen display property.
-  .aligncenter, .alignwide, .alignfull, .alignleft, .alignright {
-  //display: flex;
-  }
-
-  .alignright {
-
-  }
-
   .aligncenter {
   max-width: $mw-0;
   max-width: auto;
@@ -35,19 +26,21 @@
 
   .has-center-content  {
   text-align: center;
-  align-items: center;
+  align-items: center; // flex-direction row
+  align-content: center; // flex-direction column
   }
 
   .has-right-content  {
   text-align: right;
-  align-items: flex-end;
+  align-items: flex-end; // flex-direction row
+  align-content: flex-end; // flex-direction column
   }
 
   .has-left-content  {
   text-align: left;
-  align-items: flex-start;
+  align-items: flex-start; // flex-direction row
+  align-content: flex-start; // flex-direction column
   }
-
 
 }
 

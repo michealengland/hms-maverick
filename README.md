@@ -9,7 +9,13 @@ This child theme is used to create websites that are tailored to the client. The
 # 0.1.1
 - Removed experimental theme customizer features.
 - Refactored enqueue for window animation.
-- Removed parent-min tree.
+- Removed parent-min files.
+- Updated functions.php.
+- Fixed block editor styles.
+- Added new hms blocks styles and removed deprecated files.
+- Fixed IE11 vertical centering issues on Innerblocks Cover Image and Innerblocks.
+- Removed opinionated styles from certain blocks.
+- Improved default has-color and has-color-background styles.
 
 # 0.1.0
 - Updated core styling components.
